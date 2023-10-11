@@ -5,47 +5,47 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Serenegiant.UVC
+namespace MistoQuente.UVC
 {
 
 	/**
-	 * UVC関係のイベントハンドリングインターフェース
+	 * Interface de manipulação de eventos relacionados ao UVC
 	 */
 	public interface IUVCDrawer
 	{
 		/**
-		 * UVC機器が接続された
-		 * @param manager 呼び出し元のUVCManager
-		 * @param device 接続されたUVC機器情報
-		 * @return true: UVC機器を使う, false: UVC機器を使わない
+		 * Um dispositivo UVC foi conectado
+		 * @param manager O UVCManager que fez a chamada
+		 * @param device Informações sobre o dispositivo UVC conectado
+		 * @return true: Usar o dispositivo UVC, false: Não usar o dispositivo UVC
 		 */
 		bool OnUVCAttachEvent(UVCManager manager, UVCDevice device);
 		/**
-		 * UVC機器が取り外された
-		 * @param manager 呼び出し元のUVCManager
-		 * @param device 接続されたUVC機器情報
+		 * Um dispositivo UVC foi desconectado
+		 * @param manager O UVCManager que fez a chamada
+		 * @param device Informações sobre o dispositivo UVC desconectado
 		 */
 		void OnUVCDetachEvent(UVCManager manager, UVCDevice device);
 		/**
-		 * IUVCDrawerが指定したUVC機器の映像を描画できるかどうかを取得
-		 * @param manager 呼び出し元のUVCManager
-		 * @param device 接続されたUVC機器情報
+		 * Verifica se o IUVCDrawer pode desenhar a imagem do dispositivo UVC especificado
+		 * @param manager O UVCManager que fez a chamada
+		 * @param device Informações sobre o dispositivo UVC conectado
 		 */
 		bool CanDraw(UVCManager manager, UVCDevice device);
 		/**
-		 * UVC機器からの映像取得を開始した
-		 * @param manager 呼び出し元のUVCManager
-		 * @param device 接続されたUVC機器情報
-		 * @param tex UVC機器からの映像を受け取るTextureオブジェクト
+		 * Iniciou a captura de vídeo do dispositivo UVC
+		 * @param manager O UVCManager que fez a chamada
+		 * @param device Informações sobre o dispositivo UVC conectado
+		 * @param tex Objeto Texture para receber o vídeo do dispositivo UVC
 		 */
 		void OnUVCStartEvent(UVCManager manager, UVCDevice device, Texture tex);
 		/**
-		 * UVC機器からの映像取得を終了した
-		 * @param manager 呼び出し元のUVCManager
-		 * @param device 接続されたUVC機器情報
+		 * Encerrou a captura de vídeo do dispositivo UVC
+		 * @param manager O UVCManager que fez a chamada
+		 * @param device Informações sobre o dispositivo UVC conectado
 		 */
 		void OnUVCStopEvent(UVCManager manager, UVCDevice device);
 
 	}   // interface IUVCDrawer
 
-}	// namespace Serenegiant.UVC
+}	// namespace MistoQuente.UVC

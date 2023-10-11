@@ -4,11 +4,11 @@
 #if NDEBUG
 
 /*
- * Debug.Log等によるコンソールへの出力を抑制する場合には
- * Player SettingsのScripting Define SymbolsにNDEBUGを
- * 追加するとコンソール出力を無効化できる。
- * ただしUnityEngine.Debug.Logのようにフルパス指定している場合には
- * 無効化できない。
+ * Se você deseja suprimir a saída para o console, como Debug.Log,
+ * você pode desativá-la adicionando o símbolo "NDEBUG" nas
+ * Definições de Símbolos de Scripting nas configurações do jogador.
+ * No entanto, lembre-se de que isso não desativará a saída de métodos
+ * que especificam o caminho completo, como UnityEngine.Debug.Log.
  */
 using UnityEngine;
 using System.Diagnostics;

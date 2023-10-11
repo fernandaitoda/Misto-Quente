@@ -150,7 +150,7 @@ ADDED from [:unityLibrary] C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Li
 		ADDED from [:unityLibrary] C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:53:13-33
 	android:name
 		ADDED from [:unityLibrary] C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:52:13-57
-activity#com.serenegiant.uvcplugin.UsbPermissionActivity
+activity#com.mistoquente.uvcplugin.UsbPermissionActivity
 ADDED from [:unityLibrary] C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:55:9-57:35
 	tools:node
 		ADDED from [:unityLibrary] C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:57:13-32

@@ -9,7 +9,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Serenegiant.UVC
+namespace MistoQuente.UVC
 {
 
 	public class UVCDrawer : MonoBehaviour, IUVCDrawer
@@ -376,4 +376,4 @@ namespace Serenegiant.UVC
 
 	} // class UVCDrawer
 
-} // namespace Serenegiant.UVC
+} // namespace MistoQuente.UVC

@@ -8,10 +8,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Serenegiant.UVC
+namespace MistoQuente.UVC
 {
 	/**
-	 * UVC機器のフィルタ定義クラス
+	 * Classe de definição de filtro para dispositivos UVC
 	 */
 	[Serializable]
 	public class UVCFilter
@@ -19,33 +19,33 @@ namespace Serenegiant.UVC
 		private const string TAG = "UVCFilter#";
 
 		/**
-		 * インスペクタでフィルターのコメントを表示するための文字列(スクリプトでは使わない)
+		 * Uma string para exibir comentários do filtro no inspector (não usada no script)
 		 */
 		public string Description;
 		/**
-		 * マッチするベンダーID
-		 * 0なら全てにマッチする
+		 * ID do fabricante correspondente
+		 * 0 significa correspondência com todos os fabricantes
 		 */
 		public int Vid;
 		/**
-		 * マッチするプロダクトID
-		 * 0なら全てにマッチする
+		 * ID do produto correspondente
+		 * 0 significa correspondência com todos os produtos
 		 */
 		public int Pid;
 		/**
-		 * マッチする機器名
-		 * null/emptyならチェックしない
+		 * Nome do dispositivo correspondente
+		 * null/vazio significa que não será verificado
 		 */
 		public string DeviceName;
 		/**
-		 * 除外フィルタとして扱うかどうか
+		 * Se deve ser tratado como filtro de exclusão
 		 */
 		public bool IsExclude;
 
 		//--------------------------------------------------------------------------------
 
 		/**
-		 * 引数のUVC機器にマッチするかどうかを取得
+		 * Obtém se corresponde a um dispositivo UVC dado
 		 * @param device
 		 */
 		public bool Match(UVCDevice device)
@@ -70,10 +70,13 @@ namespace Serenegiant.UVC
 		//--------------------------------------------------------------------------------
 
 		/**
-		 * UVC機器のフィルタ処理用
-		 * filtersがnullの場合はマッチしたことにする
-		 * 除外フィルターにヒットしたときはその時点で評価を終了しfalseを返す
-		 * 除外フィルターにヒットせず通常フィルターのいずれかにヒットすればtrueを返す
+		 * Processamento de filtro para dispositivos UVC
+		 * Se os filtros forem nulos, considera-se que houve correspondência
+		 * Se houver correspondência com um filtro de exclusão, a avaliação será encerrada 
+		 nesse ponto e retornará falso
+		 * Se não houver correspondência com um filtro de exclusão e houver correspondência 
+		 com qualquer filtro regular, retornará verdadeiro
+	
 		 * @param device
 		 * @param filters Nullable
 		 */
@@ -83,10 +86,12 @@ namespace Serenegiant.UVC
 		}
 
 		/**
-		 * UVC機器のフィルタ処理用
-		 * filtersがnullの場合はマッチしたことにする
-		 * 除外フィルターにヒットしたときはその時点で評価を終了しfalseを返す
-		 * 除外フィルターにヒットせず通常フィルターのいずれかにヒットすればtrueを返す
+		 * Processamento de filtro para dispositivos UVC
+		 * Se os filtros forem nulos, considera-se que houve correspondência
+		 * Se houver correspondência com um filtro de exclusão, a avaliação será encerrada 
+		 nesse ponto e retornará falso
+		 * Se não houver correspondência com um filtro de exclusão e houver correspondência com 
+		 qualquer filtro regular, retornará verdadeiro
 		 * @param device
 		 * @param filters Nullable
 		 */
@@ -103,18 +108,19 @@ namespace Serenegiant.UVC
 					{
 						var b = filter.Match(device);
 						if (b && filter.IsExclude)
-						{   // 除外フィルターにヒットしたときはその時点でフィルタ処理を終了
+						{   // Se houver correspondência com um filtro de exclusão, a avaliação será encerrada nesse ponto
+							result = false;
 							result = false;
 							break;
 						}
 						else
-						{   // どれか一つにヒットすればいい
+						{   // Qualquer correspondência é suficiente
 							result |= b;
 						}
 					}
 					else
 					{
-						// 空フィルターはマッチしたことにする
+						// Um filtro vazio é considerado uma correspondência
 						result = true;
 					}
 
@@ -129,4 +135,4 @@ namespace Serenegiant.UVC
 
 	} // class UVCFilter
 
-} // namespace Serenegiant.UVC
+} // namespace MistoQuente.UVC

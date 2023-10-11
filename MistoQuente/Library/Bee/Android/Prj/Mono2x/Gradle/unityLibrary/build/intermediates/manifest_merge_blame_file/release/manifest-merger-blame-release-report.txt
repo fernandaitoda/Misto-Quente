@@ -101,7 +101,7 @@
 54
 55        <activity
 55-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:19:5-100
-56            android:name="com.serenegiant.uvcplugin.UsbPermissionActivity"
+56            android:name="com.mistoquente.uvcplugin.UsbPermissionActivity"
 56-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:19:15-77
 57            tools:node="remove" />
 57-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:19:78-97

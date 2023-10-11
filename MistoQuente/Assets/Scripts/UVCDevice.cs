@@ -12,7 +12,7 @@ using System.Runtime.InteropServices;
  * THETA Z1 vid:1482, pid:1005
  */
 
-namespace Serenegiant.UVC
+namespace MistoQuente.UVC
 {
 
 	[Serializable]
@@ -44,7 +44,7 @@ namespace Serenegiant.UVC
 
 
 		/**
-		 * Ricohの製品かどうか
+		 * Verifica se é um produto da Ricoh
 		 * @param info
 		 */
 		public bool IsRicoh
@@ -53,7 +53,7 @@ namespace Serenegiant.UVC
 		}
 
         /**
-		 * THETA S/V/Z1のいずれかかどうか
+		 * Verifica se é um THETA S, V ou Z1
 		 */
         public bool IsTHETA
         {
@@ -61,7 +61,7 @@ namespace Serenegiant.UVC
         }
    
 		/**
-		 * THETA Sかどうか
+		 * Verifica se é um THETA S
 		 */
 		public bool IsTHETA_S
 		{
@@ -69,65 +69,65 @@ namespace Serenegiant.UVC
 		}
 
 		/**
-		 * THETA Vかどうか
+		 * Verifica se é um THETA V
 		 */
 		public bool IsTHETA_V
 		{
-			// THETA Vからのpid=872はUVCでなくて動かないので注意(THETA側は静止画/動画モード)
+			// O pid 872 do THETA V não é UVC e não funciona (o lado do THETA é para imagem estática/vídeo)
 			get { return (vid == 1482) && (pid == 10002); }
 		}
 
         /**
-		 * THETA Z1かどうか
+		 * Verifica se é um THETA Z1
 		 * @param info
 		 */
         public bool IsTHETA_Z1
         {
-            // THETA Z1からのpid=877はUVCではなくて動かないので注意(THETA側は静止画/動画モード)
+			// O pid 877 do THETA Z1 não é UVC e não funciona (o lado do THETA é para imagem estática/vídeo)
             get { return (vid == 1482) && (pid == 10005); }
         }
 
         //--------------------------------------------------------------------------------
-        // プラグインのインターフェース関数
+        //  Funções de interface do plugin
         //--------------------------------------------------------------------------------
         /**
-		 * 機器idを取得(これだけはpublicにする)
+		 * Obtém o ID do dispositivo (esta é a única função pública)
 		 */
         [DllImport("unityuvcplugin", EntryPoint = "DeviceInfo_get_id")]
 		public static extern Int32 GetId(IntPtr devicePtr);
 
 		/**
-			* デバイスクラスを取得
+			* Obtém a classe do dispositivo
 			*/
 		[DllImport("unityuvcplugin", EntryPoint = "DeviceInfo_get_device_class")]
 		private static extern Byte GetDeviceClass(IntPtr devicePtr);
 
 		/**
-			* デバイスサブクラスを取得
+			* Obtém a subclasse do dispositivo
 			*/
 		[DllImport("unityuvcplugin", EntryPoint = "DeviceInfo_get_device_sub_class")]
 		private static extern Byte GetDeviceSubClass(IntPtr devicePtr);
 
 		/**
-			* デバイスプロトコルを取得
+			* Obtém o protocolo do dispositivo
 			*/
 		[DllImport("unityuvcplugin", EntryPoint = "DeviceInfo_get_device_protocol")]
 		private static extern Byte GetDeviceProtocol(IntPtr devicePtr);
 
 		/**
-			* ベンダーIDを取得
+			* Obtém o ID do fabricante
 			*/
 		[DllImport("unityuvcplugin", EntryPoint = "DeviceInfo_get_vendor_id")]
 		private static extern UInt16 GetVendorId(IntPtr devicePtr);
 
 		/**
-			* プロダクトIDを取得
+			* Obtém o ID do produto
 			*/
 		[DllImport("unityuvcplugin", EntryPoint = "DeviceInfo_get_product_id")]
 		private static extern UInt16 GetProductId(IntPtr devicePtr);
 
 		/**
-			* 機器名を取得
+			* Obtém o nome do dispositivo
 			*/
 		[DllImport("unityuvcplugin", EntryPoint = "DeviceInfo_get_name")]
 		[return: MarshalAs(UnmanagedType.LPStr)]
@@ -135,5 +135,5 @@ namespace Serenegiant.UVC
 
 	} // UVCDevice
 
-} // namespace Serenegiant.UVC
+} // namespace MistoQuente.UVC
 

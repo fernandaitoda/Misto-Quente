@@ -7,6 +7,11 @@ ScriptsOnlyBuild:
     - Serenegiant.UVC.UVCManager
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    Unity.TextMeshPro:
+    - TMPro.TMP_FontAsset
+    - TMPro.TMP_Settings
+    - TMPro.TMP_SpriteAsset
+    - TMPro.TMP_StyleSheet
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -20,8 +25,27 @@ ScriptsOnlyBuild:
   serializedClasses:
     Assembly-CSharp:
     - Serenegiant.UVC.UVCFilter
+    Unity.TextMeshPro:
+    - TMPro.FaceInfo_Legacy
+    - TMPro.FontAssetCreationSettings
+    - TMPro.KerningTable
+    - TMPro.TMP_Character
+    - TMPro.TMP_FontFeatureTable
+    - TMPro.TMP_FontWeightPair
+    - TMPro.TMP_GlyphAdjustmentRecord
+    - TMPro.TMP_GlyphPairAdjustmentRecord
+    - TMPro.TMP_GlyphValueRecord
+    - TMPro.TMP_Sprite
+    - TMPro.TMP_SpriteCharacter
+    - TMPro.TMP_SpriteGlyph
+    - TMPro.TMP_Style
     UnityEngine.CoreModule:
     - UnityEngine.Events.PersistentCallGroup
+    UnityEngine.TextCoreFontEngineModule:
+    - UnityEngine.TextCore.FaceInfo
+    - UnityEngine.TextCore.Glyph
+    - UnityEngine.TextCore.GlyphMetrics
+    - UnityEngine.TextCore.GlyphRect
     UnityEngine.UI:
     - UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
   methodsToPreserve: []
@@ -35,17 +59,11 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 21
       Script: {instanceID: 0}
-    - Class: 23
-      Script: {instanceID: 0}
     - Class: 28
-      Script: {instanceID: 0}
-    - Class: 33
-      Script: {instanceID: 0}
-    - Class: 43
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
-    - Class: 64
+    - Class: 49
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
@@ -56,24 +74,34 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 17324}
+      Script: {instanceID: 17224}
     - Class: 114
-      Script: {instanceID: 17610}
+      Script: {instanceID: 17350}
     - Class: 114
-      Script: {instanceID: 17816}
+      Script: {instanceID: 17636}
     - Class: 114
-      Script: {instanceID: 20584}
+      Script: {instanceID: 17844}
     - Class: 114
-      Script: {instanceID: 21048}
+      Script: {instanceID: 18138}
     - Class: 114
-      Script: {instanceID: 21436}
+      Script: {instanceID: 19110}
     - Class: 114
-      Script: {instanceID: 22854}
+      Script: {instanceID: 19364}
     - Class: 114
-      Script: {instanceID: 22858}
+      Script: {instanceID: 20072}
     - Class: 114
-      Script: {instanceID: 23272}
+      Script: {instanceID: 20084}
+    - Class: 114
+      Script: {instanceID: 20626}
+    - Class: 114
+      Script: {instanceID: 20726}
+    - Class: 114
+      Script: {instanceID: 21094}
+    - Class: 114
+      Script: {instanceID: 21482}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -298,6 +326,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: Button
+  - hash:
+      serializedVersion: 2
+      Hash: 2add8350e3d70d99f3cc21b2eb505dbc
+    assemblyName: Assembly-CSharp
+    namespaceName: Serenegiant.UVC
+    className: UVCDrawer
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -600,6 +634,12 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
+      Hash: 4b501b9bf52f734fe7b1f4055bec800b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: CameraAccess
+  - hash:
+      serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -652,6 +692,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: AspectRatioFitter
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: Serenegiant
+    className: AndroidUtils
   - hash:
       serializedVersion: 2
       Hash: 46ffbaea01259c5c7ee677afefd93ea8
@@ -852,6 +898,12 @@ ScriptsOnlyBuild:
     className: UnityOnParticleCollisionMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 18696ead80af7f7e4f529db0fe85842e
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Devices
+  - hash:
+      serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -916,24 +968,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 751e5bae2a317288c2ab58d66687092b
-    assemblyName: Assembly-CSharp
-    namespaceName: Serenegiant
-    className: AndroidUtils
-  - hash:
-      serializedVersion: 2
-      Hash: 4b501b9bf52f734fe7b1f4055bec800b
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: CameraAccess
-  - hash:
-      serializedVersion: 2
-      Hash: 2add8350e3d70d99f3cc21b2eb505dbc
-    assemblyName: Assembly-CSharp
-    namespaceName: Serenegiant.UVC
-    className: UVCDrawer
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity

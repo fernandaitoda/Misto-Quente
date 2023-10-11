@@ -22,7 +22,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;UNITY_2022_3_9;UNITY_2022_3;UNITY_2022;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_RUNTIME_PERMISSIONS;ENABLE_ENGINE_CODE_STRIPPING;ENABLE_ONSCREEN_KEYBOARD;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;ENABLE_NAVIGATION_PACKAGE_DEBUG_VISUALIZATION;ENABLE_NAVIGATION_HEIGHTMESH_RUNTIME_SUPPORT;ENABLE_NAVIGATION_UI_REQUIRES_PACKAGE;PLATFORM_ANDROID;TEXTCORE_1_0_OR_NEWER;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;UNITY_CAN_SHOW_SPLASH_SCREEN;UNITY_HAS_GOOGLEVR;UNITY_HAS_TANGO;ENABLE_SPATIALTRACKING;ENABLE_ETC_COMPRESSION;PLATFORM_EXTENDS_VULKAN_DEVICE;PLATFORM_HAS_MULTIPLE_SWAPCHAINS;UNITY_ANDROID_SUPPORTS_SHADOWFILES;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_2022_3_9;UNITY_2022_3;UNITY_2022;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_RUNTIME_PERMISSIONS;ENABLE_ENGINE_CODE_STRIPPING;ENABLE_ONSCREEN_KEYBOARD;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;ENABLE_NAVIGATION_PACKAGE_DEBUG_VISUALIZATION;ENABLE_NAVIGATION_HEIGHTMESH_RUNTIME_SUPPORT;ENABLE_NAVIGATION_UI_REQUIRES_PACKAGE;PLATFORM_ANDROID;TEXTCORE_1_0_OR_NEWER;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;UNITY_CAN_SHOW_SPLASH_SCREEN;UNITY_HAS_GOOGLEVR;UNITY_HAS_TANGO;ENABLE_SPATIALTRACKING;ENABLE_ETC_COMPRESSION;PLATFORM_EXTENDS_VULKAN_DEVICE;PLATFORM_HAS_MULTIPLE_SWAPCHAINS;UNITY_ANDROID_SUPPORTS_SHADOWFILES;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER;DEVELOPMENT_BUILD</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -36,69 +36,105 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn4.4\cs\System.Text.Json.SourceGeneration.dll" />
-    <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn3.11\cs\tr\System.Text.Json.SourceGeneration.resources.dll" />
+    <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn3.11\cs\es\System.Text.Json.SourceGeneration.resources.dll" />
     <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn4.0\cs\es\System.Text.Json.SourceGeneration.resources.dll" />
     <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn4.0\cs\fr\System.Text.Json.SourceGeneration.resources.dll" />
     <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn4.0\cs\System.Text.Json.SourceGeneration.dll" />
     <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn4.4\cs\ko\System.Text.Json.SourceGeneration.resources.dll" />
-    <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn4.4\cs\it\System.Text.Json.SourceGeneration.resources.dll" />
-    <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn4.0\cs\cs\System.Text.Json.SourceGeneration.resources.dll" />
-    <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn4.0\cs\zh-Hans\System.Text.Json.SourceGeneration.resources.dll" />
-    <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn3.11\cs\ko\System.Text.Json.SourceGeneration.resources.dll" />
-    <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn3.11\cs\ja\System.Text.Json.SourceGeneration.resources.dll" />
-    <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn3.11\cs\de\System.Text.Json.SourceGeneration.resources.dll" />
-    <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn4.4\cs\de\System.Text.Json.SourceGeneration.resources.dll" />
-    <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn4.4\cs\zh-Hant\System.Text.Json.SourceGeneration.resources.dll" />
-    <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn4.0\cs\de\System.Text.Json.SourceGeneration.resources.dll" />
     <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn4.0\cs\tr\System.Text.Json.SourceGeneration.resources.dll" />
-    <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn4.4\cs\ru\System.Text.Json.SourceGeneration.resources.dll" />
-    <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn4.0\cs\ko\System.Text.Json.SourceGeneration.resources.dll" />
-    <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn3.11\cs\fr\System.Text.Json.SourceGeneration.resources.dll" />
-    <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn4.0\cs\ja\System.Text.Json.SourceGeneration.resources.dll" />
-    <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn3.11\cs\pt-BR\System.Text.Json.SourceGeneration.resources.dll" />
+    <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn4.4\cs\it\System.Text.Json.SourceGeneration.resources.dll" />
+    <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn4.0\cs\zh-Hans\System.Text.Json.SourceGeneration.resources.dll" />
+    <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn4.0\cs\de\System.Text.Json.SourceGeneration.resources.dll" />
+    <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn3.11\cs\ko\System.Text.Json.SourceGeneration.resources.dll" />
+    <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn3.11\cs\de\System.Text.Json.SourceGeneration.resources.dll" />
+    <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn3.11\cs\ja\System.Text.Json.SourceGeneration.resources.dll" />
+    <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn4.4\cs\de\System.Text.Json.SourceGeneration.resources.dll" />
     <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn3.11\cs\ru\System.Text.Json.SourceGeneration.resources.dll" />
+    <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn4.4\cs\fr\System.Text.Json.SourceGeneration.resources.dll" />
+    <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn4.4\cs\ru\System.Text.Json.SourceGeneration.resources.dll" />
+    <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn4.0\cs\cs\System.Text.Json.SourceGeneration.resources.dll" />
+    <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn3.11\cs\fr\System.Text.Json.SourceGeneration.resources.dll" />
+    <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn4.0\cs\ko\System.Text.Json.SourceGeneration.resources.dll" />
+    <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn4.4\cs\zh-Hant\System.Text.Json.SourceGeneration.resources.dll" />
+    <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn4.0\cs\ja\System.Text.Json.SourceGeneration.resources.dll" />
     <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn4.0\cs\it\System.Text.Json.SourceGeneration.resources.dll" />
+    <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn3.11\cs\tr\System.Text.Json.SourceGeneration.resources.dll" />
+    <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn3.11\cs\pt-BR\System.Text.Json.SourceGeneration.resources.dll" />
     <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn4.0\cs\zh-Hant\System.Text.Json.SourceGeneration.resources.dll" />
     <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn4.4\cs\ja\System.Text.Json.SourceGeneration.resources.dll" />
+    <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn4.4\cs\pl\System.Text.Json.SourceGeneration.resources.dll" />
     <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn4.0\cs\pt-BR\System.Text.Json.SourceGeneration.resources.dll" />
     <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn3.11\cs\it\System.Text.Json.SourceGeneration.resources.dll" />
-    <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn4.0\cs\ru\System.Text.Json.SourceGeneration.resources.dll" />
     <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn3.11\cs\zh-Hant\System.Text.Json.SourceGeneration.resources.dll" />
     <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn3.11\cs\pl\System.Text.Json.SourceGeneration.resources.dll" />
-    <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn4.4\cs\fr\System.Text.Json.SourceGeneration.resources.dll" />
+    <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn4.0\cs\ru\System.Text.Json.SourceGeneration.resources.dll" />
     <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn4.4\cs\cs\System.Text.Json.SourceGeneration.resources.dll" />
     <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn4.0\cs\pl\System.Text.Json.SourceGeneration.resources.dll" />
-    <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn4.4\cs\pl\System.Text.Json.SourceGeneration.resources.dll" />
-    <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn4.4\cs\pt-BR\System.Text.Json.SourceGeneration.resources.dll" />
-    <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn4.4\cs\tr\System.Text.Json.SourceGeneration.resources.dll" />
     <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn4.4\cs\zh-Hans\System.Text.Json.SourceGeneration.resources.dll" />
+    <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn4.4\cs\tr\System.Text.Json.SourceGeneration.resources.dll" />
+    <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn4.4\cs\pt-BR\System.Text.Json.SourceGeneration.resources.dll" />
+    <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn3.11\cs\zh-Hans\System.Text.Json.SourceGeneration.resources.dll" />
     <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn4.4\cs\es\System.Text.Json.SourceGeneration.resources.dll" />
     <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn3.11\cs\cs\System.Text.Json.SourceGeneration.resources.dll" />
-    <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn3.11\cs\zh-Hans\System.Text.Json.SourceGeneration.resources.dll" />
     <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn3.11\cs\System.Text.Json.SourceGeneration.dll" />
-    <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn3.11\cs\es\System.Text.Json.SourceGeneration.resources.dll" />
+    <Analyzer Include="C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\analyzers\dotnet\roslyn4.4\cs\System.Text.Json.SourceGeneration.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.9f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.9f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\CameraAccess.cs" />
-     <Compile Include="Assets\Scripts\UVCDrawer.cs" />
-     <Compile Include="Assets\Scripts\UVCDevice.cs" />
-     <Compile Include="Assets\Scripts\UVCFilter.cs" />
-     <Compile Include="Assets\Scripts\IUVCDrawer.cs" />
-     <Compile Include="Assets\Scripts\AndroidUtils.cs" />
-     <Compile Include="Assets\Scripts\Debug.cs" />
-     <Compile Include="Assets\Scripts\ComponentRestrictionAttribute.cs" />
-     <Compile Include="Assets\Scripts\UVCManager.cs" />
-     <None Include="Assets\Packages\System.Text.Encodings.Web.7.0.0\lib\netstandard2.0\System.Text.Encodings.Web.xml" />
-     <None Include="Assets\Packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.xml" />
+     <Compile Include="Assets\UVC4UnityAndroidPlugin\Samples\Scripts\CameraController.cs" />
+     <Compile Include="Assets\UVC4UnityAndroidPlugin\Samples\Scripts\CubeHandler.cs" />
+     <Compile Include="Assets\UVC4UnityAndroidPlugin\Scripts\ComponentRestrictionAttribute.cs" />
+     <Compile Include="Assets\UVC4UnityAndroidPlugin\Scripts\Debug.cs" />
+     <Compile Include="Assets\UVC4UnityAndroidPlugin\Scripts\UVCFilter.cs" />
+     <Compile Include="Assets\UVC4UnityAndroidPlugin\Scripts\UVCManager.cs" />
+     <Compile Include="Assets\UVC4UnityAndroidPlugin\Scripts\IUVCDrawer.cs" />
+     <Compile Include="Assets\UVC4UnityAndroidPlugin\Scripts\UVCDrawer.cs" />
+     <Compile Include="Assets\UVC4UnityAndroidPlugin\Scripts\AndroidUtils.cs" />
+     <Compile Include="Assets\UVC4UnityAndroidPlugin\Scripts\UVCDevice.cs" />
+     <Compile Include="Assets\UVC4UnityAndroidPlugin\Samples\Scripts\TouchEventManager.cs" />
+     <None Include="Assets\Packages\System.Buffers.4.5.1\version.txt" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+     <None Include="Assets\UVC4UnityAndroidPlugin\Samples\Shaders\ThetaRealtimeEquirectangular1080p.shader" />
+     <None Include="Assets\Packages\System.Threading.Tasks.Extensions.4.5.4\version.txt" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+     <None Include="Assets\Packages\System.Buffers.4.5.1\useSharedDesignerContext.txt" />
      <None Include="Assets\Packages\System.Text.Encodings.Web.7.0.0\useSharedDesignerContext.txt" />
-     <None Include="Assets\Packages\Microsoft.Bcl.AsyncInterfaces.7.0.0\useSharedDesignerContext.txt" />
+     <None Include="Assets\Packages\System.Numerics.Vectors.4.5.0\useSharedDesignerContext.txt" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+     <None Include="Assets\Packages\System.Threading.Tasks.Extensions.4.5.4\lib\netstandard2.0\System.Threading.Tasks.Extensions.xml" />
+     <None Include="Assets\Packages\System.Memory.4.5.5\lib\netstandard2.0\System.Memory.xml" />
      <None Include="Assets\Packages\System.Runtime.CompilerServices.Unsafe.6.0.0\useSharedDesignerContext.txt" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+     <None Include="Assets\Packages\System.Numerics.Vectors.4.5.0\version.txt" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
+     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+     <None Include="Assets\Packages\System.Buffers.4.5.1\lib\netstandard2.0\System.Buffers.xml" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+     <None Include="Assets\Packages\System.Numerics.Vectors.4.5.0\lib\netstandard2.0\System.Numerics.Vectors.xml" />
+     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+     <None Include="Assets\Packages\System.Threading.Tasks.Extensions.4.5.4\useSharedDesignerContext.txt" />
      <None Include="Assets\Packages\Microsoft.Bcl.AsyncInterfaces.7.0.0\lib\netstandard2.1\Microsoft.Bcl.AsyncInterfaces.xml" />
+     <None Include="Assets\Packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.xml" />
      <None Include="Assets\Packages\System.Text.Json.7.0.3\lib\netstandard2.0\System.Text.Json.xml" />
      <None Include="Assets\Packages\System.Text.Json.7.0.3\useSharedDesignerContext.txt" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+     <None Include="Assets\Packages\System.Memory.4.5.5\useSharedDesignerContext.txt" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+     <None Include="Assets\Packages\Microsoft.Bcl.AsyncInterfaces.7.0.0\useSharedDesignerContext.txt" />
+     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+     <None Include="Assets\Packages\System.Text.Encodings.Web.7.0.0\lib\netstandard2.0\System.Text.Encodings.Web.xml" />
+     <None Include="Assets\Packages\System.Memory.4.5.5\version.txt" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.9f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -342,20 +378,20 @@
     <Reference Include="ReportGeneratorMerged">
         <HintPath>C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PackageCache\com.unity.testtools.codecoverage@1.2.4\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
     </Reference>
-    <Reference Include="System.Text.Encodings.Web">
-        <HintPath>C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Encodings.Web.7.0.0\lib\netstandard2.0\System.Text.Encodings.Web.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime.CompilerServices.Unsafe">
-        <HintPath>C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
         <HintPath>C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PackageCache\com.unity.visualscripting@1.9.0\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web">
+        <HintPath>C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Encodings.Web.7.0.0\lib\netstandard2.0\System.Text.Encodings.Web.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces">
         <HintPath>C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\Microsoft.Bcl.AsyncInterfaces.7.0.0\lib\netstandard2.1\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
     <Reference Include="System.Text.Json">
         <HintPath>C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Text.Json.7.0.3\lib\netstandard2.0\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe">
+        <HintPath>C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Assets\Packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Android.Types">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.9f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Types.dll</HintPath>

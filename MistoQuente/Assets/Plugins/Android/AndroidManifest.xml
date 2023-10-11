@@ -4,10 +4,13 @@
     package="com.unity3d.player"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-permission android:name="android.permission.CAMERA" /> //
+    <uses-feature android:name="android.hardware.usb.host" />
+    
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.USB_PERMISSION" />
 
     <application>
-        <activity android:name="com.serenegiant.uvcplugin.UsbPermissionActivity" tools:node="remove"/>
+        <activity android:name="com.MistoQuente.uvcplugin.UsbPermissionActivity" tools:node="remove"/>
         <activity android:name="com.unity3d.player.UnityPlayerActivity"
                   android:theme="@style/UnityThemeSelector">
             <intent-filter>

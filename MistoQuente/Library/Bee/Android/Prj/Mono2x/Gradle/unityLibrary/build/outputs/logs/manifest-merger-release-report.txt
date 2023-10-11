@@ -1,8 +1,8 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:2:1-29:12
-INJECTED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:2:1-29:12
-INJECTED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:2:1-29:12
+ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:2:1-31:12
 	package
 		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:2:70-98
 		INJECTED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml
@@ -15,138 +15,146 @@ uses-permission#android.permission.CAMERA
 ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:3:3-63
 	android:name
 		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:3:20-60
+uses-permission#android.permission.USB_PERMISSION
+ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:3-71
+	android:name
+		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:20-68
+uses-feature#android.hardware.usb.host
+ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:5:3-60
+	android:name
+		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:5:17-57
 uses-feature#0x00030000
-ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:3-52
+ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:6:3-52
 	android:glEsVersion
-		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:17-49
+		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:6:17-49
 uses-feature#android.hardware.vulkan.version
-ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:5:3-91
+ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:7:3-91
 	android:required
-		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:5:64-88
+		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:7:64-88
 	android:name
-		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:5:17-63
+		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:7:17-63
 uses-feature#android.hardware.camera
-ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:6:3-83
+ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:8:3-83
 	android:required
-		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:6:56-80
+		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:8:56-80
 	android:name
-		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:6:17-55
+		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:8:17-55
 uses-feature#android.hardware.camera.autofocus
-ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:7:3-93
+ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:9:3-93
 	android:required
-		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:7:66-90
+		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:9:66-90
 	android:name
-		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:7:17-65
+		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:9:17-65
 uses-feature#android.hardware.camera.front
-ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:8:3-89
+ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:3-89
 	android:required
-		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:8:62-86
+		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:62-86
 	android:name
-		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:8:17-61
+		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:17-61
 uses-feature#android.hardware.touchscreen
-ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:9:3-88
+ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:11:3-88
 	android:required
-		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:9:61-85
+		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:11:61-85
 	android:name
-		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:9:17-60
+		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:11:17-60
 uses-feature#android.hardware.touchscreen.multitouch
-ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:3-99
+ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:3-99
 	android:required
-		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:72-96
+		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:72-96
 	android:name
-		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:17-71
+		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:17-71
 uses-feature#android.hardware.touchscreen.multitouch.distinct
-ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:11:3-108
+ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:13:3-108
 	android:required
-		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:11:81-105
+		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:13:81-105
 	android:name
-		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:11:17-80
+		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:13:17-80
 application
-ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:3-28:17
+ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:3-30:17
 	android:extractNativeLibs
-		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:16-48
+		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:16-48
 meta-data#unity.splash-mode
-ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:13:5-69
+ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:5-69
 	android:value
-		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:13:49-66
+		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:49-66
 	android:name
-		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:13:16-48
+		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:16-48
 meta-data#unity.splash-enable
-ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:5-74
+ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:5-74
 	android:value
-		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:51-71
+		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:51-71
 	android:name
-		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:16-50
+		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:16-50
 meta-data#unity.launch-fullscreen
-ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:5-78
+ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:17:5-78
 	android:value
-		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:55-75
+		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:17:55-75
 	android:name
-		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:16-54
+		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:17:16-54
 meta-data#unity.allow-resizable-window
-ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:5-84
-	android:value
-		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:60-81
-	android:name
-		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:16-59
-meta-data#notch.config
-ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:17:5-81
-	android:value
-		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:17:44-78
-	android:name
-		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:17:16-43
-meta-data#unity.auto-report-fully-drawn
 ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:5-84
 	android:value
-		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:61-81
+		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:60-81
 	android:name
-		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:16-60
-activity#com.serenegiant.uvcplugin.UsbPermissionActivity
-ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:19:5-100
+		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:16-59
+meta-data#notch.config
+ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:19:5-81
+	android:value
+		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:19:44-78
+	android:name
+		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:19:16-43
+meta-data#unity.auto-report-fully-drawn
+ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:20:5-84
+	android:value
+		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:20:61-81
+	android:name
+		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:20:16-60
+activity#com.MistoQuente.uvcplugin.UsbPermissionActivity
+ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:21:5-100
 	tools:node
-		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:19:78-97
+		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:21:78-97
 	android:name
-		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:19:15-77
+		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:21:15-77
 activity#com.unity3d.player.UnityPlayerActivity
-ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:20:5-27:16
+ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:22:5-29:16
 	android:screenOrientation
-		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:20:111-147
+		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:22:111-147
 	android:launchMode
-		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:20:148-179
+		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:22:148-179
 	android:hardwareAccelerated
-		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:20:397-432
+		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:22:397-432
 	android:exported
-		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:20:433-456
+		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:22:433-456
 	android:resizeableActivity
-		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:20:362-396
+		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:22:362-396
 	android:configChanges
-		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:20:180-361
+		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:22:180-361
 	android:theme
-		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:20:69-110
+		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:22:69-110
 	android:name
-		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:20:15-68
+		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:22:15-68
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:21:7-24:23
+ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:23:7-26:23
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:22:9-69
+ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:24:9-69
 	android:name
-		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:22:19-66
+		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:24:19-66
 action#android.intent.action.MAIN
-ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:23:9-61
+ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:25:9-61
 	android:name
-		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:23:17-58
+		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:25:17-58
 meta-data#unityplayer.UnityActivity
-ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:25:7-82
+ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:27:7-82
 	android:value
-		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:25:59-79
+		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:27:59-79
 	android:name
-		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:25:18-58
+		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:27:18-58
 meta-data#notch_support
-ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:26:7-70
+ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:28:7-70
 	android:value
-		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:26:47-67
+		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:28:47-67
 	android:name
-		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:26:18-46
+		ADDED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:28:18-46
 uses-sdk
 INJECTED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml

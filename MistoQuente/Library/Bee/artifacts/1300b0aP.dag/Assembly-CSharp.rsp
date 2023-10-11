@@ -357,6 +357,7 @@
 "Assets/Scripts/CameraAccess.cs"
 "Assets/Scripts/ComponentRestrictionAttribute.cs"
 "Assets/Scripts/Debug.cs"
+"Assets/Scripts/Devices.cs"
 "Assets/Scripts/IUVCDrawer.cs"
 "Assets/Scripts/UVCDevice.cs"
 "Assets/Scripts/UVCDrawer.cs"

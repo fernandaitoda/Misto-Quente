@@ -1,4 +1,0 @@
-#Sat Sep 30 22:37:56 BRT 2023
-base.0=C\:\\Users\\Victor\\Documents\\Misto-Quente\\MistoQuente\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
-renamed.0=classes.dex
-path.0=classes.dex

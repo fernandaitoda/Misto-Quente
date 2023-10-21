@@ -9,9 +9,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
+// Este código é responsável por renderizar o vídeo de dispositivos UVC 
+// (Universal Video Class) em materiais, renderizadores ou elementos RawImage em 
+// um ambiente Unity. Ele implementa uma interface IUVCDrawer para lidar com 
+// eventos relacionados à conexão e desconexão de dispositivos UVC, bem como a 
+// captura de vídeo.
+
+
 namespace MistoQuente.UVC
 {
-
 	public class UVCDrawer : MonoBehaviour, IUVCDrawer
 	{
 		/**
@@ -33,8 +40,8 @@ namespace MistoQuente.UVC
 		public UVCFilter[] UVCFilters;
 
 		/**
-		 * UVC機器からの映像の描画先Materialを保持しているGameObject
-		 * 設定していない場合はこのスクリプトを割当てたのと同じGameObjecを使う。
+		 * O GameObject que mantém o Material de destino para renderizar a imagem do dispositivo UVC.
+ 			* Se não estiver configurado, o mesmo GameObject onde este script foi atribuído será usado.
 		 */
 		public List<GameObject> RenderTargets;
 
@@ -42,20 +49,20 @@ namespace MistoQuente.UVC
 		private const string TAG = "UVCDrawer#";
 
 		/**
-		 * UVC機器からの映像の描画先Material
-		 * TargetGameObjectから取得する
-		 * 優先順位：
-		 *	 TargetGameObjectのSkybox
-		 *	 > TargetGameObjectのRenderer
-		 *	 > TargetGameObjectのRawImage
-		 *	 > TargetGameObjectのMaterial
-		 * いずれの方法でも取得できなければStartでUnityExceptionを投げる
+		* Material de destino para renderizar a imagem do dispositivo UVC.
+		* Obtido a partir do TargetGameObject.
+		* Prioridade:
+		*     Skybox do TargetGameObject
+		*     > Renderer do TargetGameObject
+		*     > RawImage do TargetGameObject
+		*     > Material do TargetGameObject
+		* Se nenhum desses métodos funcionar, uma UnityException será lançada em Start().
 		 */
 		private UnityEngine.Object[] TargetMaterials;
 		/**
-		 * オリジナルのテクスチャ
-		 * UVCカメラ映像受け取り用テクスチャをセットする前に
-		 * GetComponent<Renderer>().material.mainTextureに設定されていた値
+		 * Textura original.
+		* O valor que estava configurado em GetComponent<Renderer>().material.mainTexture
+		* antes de definir a textura para receber a imagem da câmera UVC.
 		 */
 		private Texture[] SavedTextures;
 
@@ -82,20 +89,21 @@ namespace MistoQuente.UVC
 		//================================================================================
 
 		/**
-		 * UVC機器が接続された
-		 * IOnUVCAttachHandlerの実装
-		 * @param manager 呼び出し元のUVCManager
-		 * @param device 対象となるUVC機器の情報
-		 * @return true: UVC機器を使用する, false: UVC機器を使用しない
+		* Um dispositivo UVC foi conectado.
+		* Implementação de IOnUVCAttachHandler.
+		* @param manager O UVCManager que fez a chamada.
+		* @param device Informações sobre o dispositivo UVC alvo.
+		* @return true: Usar o dispositivo UVC, false: Não usar o dispositivo UVC.
 		 */
 		public bool OnUVCAttachEvent(UVCManager manager, UVCDevice device)
 		{
 #if (!NDEBUG && DEBUG && ENABLE_LOG)
 			Console.WriteLine($"{TAG}OnUVCAttachEvent:{device}");
 #endif
-			// XXX 今の実装では基本的に全てのUVC機器を受け入れる
-			// ただしTHETA SとTHETA VとTHETA Z1は映像を取得できないインターフェースがあるのでオミットする
-			// CanDrawと同様にUVC機器フィルターをインスペクタで設定できるようにする
+		// XXX Na implementação atual, basicamente aceitamos todos os dispositivos UVC.
+		// No entanto, omitimos o THETA S, THETA V e THETA Z1, pois eles têm interfaces que não podem capturar vídeo.
+		// Da mesma forma que CanDraw, permitimos configurar um filtro de dispositivos UVC no Inspector.
+
 			var result = !device.IsRicoh || device.IsTHETA;
 
 			result &= UVCFilter.Match(device, UVCFilters);
@@ -105,9 +113,9 @@ namespace MistoQuente.UVC
 
 		/**
 		 * UVC機器が取り外された
-		 * IOnUVCDetachEventHandlerの実装
-		 * @param manager 呼び出し元のUVCManager
-		 * @param device 対象となるUVC機器の情報
+		 * Implementação do IOnUVCDetachEventHandler.
+		 * @param manager O UVCManager que fez a chamada.
+		 * @param device As informações do dispositivo UVC alvo.
 		 */
 		public void OnUVCDetachEvent(UVCManager manager, UVCDevice device)
 		{
@@ -152,10 +160,10 @@ namespace MistoQuente.UVC
 //		}
 
 		/**
-		 * IUVCDrawerが指定したUVC機器の映像を描画できるかどうかを取得
-		 * IUVCDrawerの実装
-		 * @param manager 呼び出し元のUVCManager
-		 * @param device 対象となるUVC機器の情報
+		 * Obtém se IUVCDrawer é capaz de renderizar o vídeo do dispositivo UVC especificado. 
+		 * Implementação de IUVCDrawer.
+		 * @param manager O UVCManager que fez a chamada.
+		 * @param device As informações do dispositivo UVC alvo.
 		 */
 		public bool CanDraw(UVCManager manager, UVCDevice device)
 		{
@@ -163,11 +171,11 @@ namespace MistoQuente.UVC
 		}
 
 		/**
-		 * 映像取得を開始した
-		 * IUVCDrawerの実装
-		 * @param manager 呼び出し元のUVCManager
-		 * @param device 対象となるUVC機器の情報
-		 * @param tex UVC機器からの映像を受け取るTextureインスタンス
+		 * Iniciou a captura de vídeo. 
+		 * Implementação de IUVCDrawer. 
+		 * @param manager O UVCManager que fez a chamada. 
+		 * @param device As informações do dispositivo UVC alvo.
+		 * @param tex Uma instância de Textura para receber o vídeo do dispositivo UVC."
 		 */
 		public void OnUVCStartEvent(UVCManager manager, UVCDevice device, Texture tex)
 		{
@@ -178,10 +186,10 @@ namespace MistoQuente.UVC
 		}
 
 		/**
-		 * 映像取得を終了した
-		 * IUVCDrawerの実装
-		 * @param manager 呼び出し元のUVCManager
-		 * @param device 対象となるUVC機器の情報
+		 * A captura de vídeo foi encerrada.
+		 * Implementação de IUVCDrawer.
+		 * @param manager O UVCManager que fez a chamada. 
+		 * @param device As informações do dispositivo UVC alvo.
 		 */
 		public void OnUVCStopEvent(UVCManager manager, UVCDevice device)
 		{
@@ -221,9 +229,9 @@ namespace MistoQuente.UVC
 				}
 			}
 			if (!found)
-			{   // 描画先が1つも見つからなかったときはこのスクリプトが
-				// AddComponentされているGameObjectからの取得を試みる
-				// XXX RenderTargetsにgameObjectをセットする？
+			{   //  When no rendering destination is found,
+				// attempt to retrieve it from the GameObject where this script is added.
+				// Should gameObject be set to XXX RenderTargets?
 				TargetMaterials = new UnityEngine.Object[1];
 				SavedTextures = new Texture[1];
 				quaternions = new Quaternion[1];
@@ -238,16 +246,16 @@ namespace MistoQuente.UVC
 		}
 
 		/**
-		 * テクスチャとして映像を描画するMaterialを取得する
-		 * 指定したGameObjectにSkybox/Renderer/RawImage/MaterialがあればそれからMaterialを取得する
-		 * それぞれが複数割り当てられている場合最初に見つかった使用可能ものを返す
-		 * 優先度: Skybox > Renderer > RawImage > Material
-		 * @param target
-		 * @return 見つからなければnullを返す
+		* Obtém um material para desenhar uma imagem como textura.
+		* Obtém o material a partir do GameObject especificado, se ele contiver Skybox/Renderer/RawImage/Material.
+		* Se várias instâncias de cada um estiverem atribuídas, retorna o primeiro encontrado.
+		* Prioridade: Skybox > Renderer > RawImage > Material
+		* @param target
+		* @return Retorna nulo se não for encontrado.
 		 */
 		UnityEngine.Object GetTargetMaterial(GameObject target/*NonNull*/)
 		{
-			// Skyboxの取得を試みる
+			// Tente obter o Skybox.
 			var skyboxs = target.GetComponents<Skybox>();
 			if (skyboxs != null)
 			{
@@ -260,7 +268,7 @@ namespace MistoQuente.UVC
 					}
 				}
 			}
-			// Skyboxが取得できなければRendererの取得を試みる
+			// Se não for possível obter um Skybox, tente obter um Renderer.
 			var renderers = target.GetComponents<Renderer>();
 			if (renderers != null)
 			{
@@ -273,7 +281,7 @@ namespace MistoQuente.UVC
 
 				}
 			}
-			// SkyboxもRendererも取得できなければRawImageの取得を試みる
+			// Se não for possível obter um Skybox ou um Renderer, tente obter um RawImage.
 			var rawImages = target.GetComponents<RawImage>();
 			if (rawImages != null)
 			{
@@ -286,7 +294,7 @@ namespace MistoQuente.UVC
 
 				}
 			}
-			// SkyboxもRendererもRawImageも取得できなければMaterialの取得を試みる
+			// Se não for possível obter um Skybox, um Renderer ou um RawImage, tente obter um Material.
 			var material = target.GetComponent<Material>();
 			if (material != null)
 			{
@@ -329,8 +337,8 @@ namespace MistoQuente.UVC
 		}
 
 		/**
-		 * 映像取得開始時の処理
-		 * @param tex 映像を受け取るテクスチャ
+		 * Processamento no início da aquisição de vídeo.
+		 * @param tex Textura para receber o vídeo.
 		 */
 		private void HandleOnStartPreview(Texture tex)
 		{
@@ -360,7 +368,7 @@ namespace MistoQuente.UVC
 		}
 
 		/**
-		 * 映像取得が終了したときのUnity側の処理
+		 * Processamento no lado do Unity quando a captura de vídeo é concluída."
 		 */
 		private void HandleOnStopPreview()
 		{

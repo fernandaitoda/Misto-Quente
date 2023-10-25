@@ -15,7 +15,7 @@ using UnityEngine.Android;
 #endif
 #endif
 
-namespace MistoQuente
+namespace Serenegiant
 {
 
 	public class AndroidUtils : MonoBehaviour
@@ -31,7 +31,7 @@ namespace MistoQuente
 		}
 
 		private const string TAG = "AndroidUtils#";
-		private const string FQCN_PLUGIN = "com.mistoquente.androidutils.AndroidUtils";
+		private const string FQCN_PLUGIN = "com.serenegiant.androidutils.AndroidUtils";
 
 		//--------------------------------------------------------------------------------
 		/**
@@ -329,6 +329,6 @@ namespace MistoQuente
 
 	} // class AndroidUtils
 
-} // namespace MistoQuente
+} // namespace Serenegiant
 
 #endif // #if UNITY_ANDROID

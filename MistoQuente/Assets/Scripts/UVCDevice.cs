@@ -12,7 +12,7 @@ using System.Runtime.InteropServices;
  * THETA Z1 vid:1482, pid:1005
  */
 
-namespace MistoQuente.UVC
+namespace Serenegiant.UVC
 {
 
 	[Serializable]
@@ -135,5 +135,5 @@ namespace MistoQuente.UVC
 
 	} // UVCDevice
 
-} // namespace MistoQuente.UVC
+} // namespace Serenegiant.UVC
 

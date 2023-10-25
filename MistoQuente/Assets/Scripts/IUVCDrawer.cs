@@ -5,7 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace MistoQuente.UVC
+namespace Serenegiant.UVC
 {
 
 	/**
@@ -48,4 +48,4 @@ namespace MistoQuente.UVC
 
 	}   // interface IUVCDrawer
 
-}	// namespace MistoQuente.UVC
+}	// namespace Serenegiant.UVC

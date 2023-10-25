@@ -7,25 +7,34 @@ using AOT;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Net.Sockets;
 using System.Runtime.InteropServices;
 using System.Threading;
+using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 #if UNITY_ANDROID && UNITY_2018_3_OR_NEWER
 using UnityEngine.Android;
+using UnityEngine.Rendering;
 #endif
 
-namespace MistoQuente.UVC
+namespace Serenegiant.UVC
 {
-    [RequireComponent(typeof(AndroidUtils))]
+	[RequireComponent(typeof(AndroidUtils))]
 	public class UVCManager : MonoBehaviour
 	{
+		[SerializeField] TextMeshProUGUI[] idCamera;
+
 		private const string TAG = "UVCManager#";
-		private const string FQCN_DETECTOR = "com.mistoquente.usb.DeviceDetectorFragment";
-        private const int FRAME_TYPE_MJPEG = 0x000007;
-        private const int FRAME_TYPE_H264 = 0x000014;
-        private const int FRAME_TYPE_H264_FRAME = 0x030011;
-	
+		private const string FQCN_DETECTOR = "com.serenegiant.usb.DeviceDetectorFragment";
+		private const int FRAME_TYPE_MJPEG = 0x000007;
+		private const int FRAME_TYPE_H264 = 0x000014;
+		private const int FRAME_TYPE_H264_FRAME = 0x030011;
+
+		public static int cameraIndex = 0; // 0 - nenhuma camera, 1 - camera esquerda, 2 - camera direita
+
 		/**
 		* Resolução padrão (largura) quando o IUVCSelector não está definido
 		* ou quando o IUVCSelector retorna nulo durante a seleção de resolução.
@@ -43,11 +52,11 @@ namespace MistoQuente.UVC
 		* false: MJPEG > H.264 > YUV
 		*/
 		public bool PreferH264 = false;
-        /**
+		/**
 		* Renderizar a textura da imagem do dispositivo UVC antes da renderização da cena.
 		*/
-        public bool RenderBeforeSceneRendering = false;
-   
+		bool RenderBeforeSceneRendering = false;
+
 		/**
 		* Manipuladores de eventos relacionados a UVC.
 		*/
@@ -68,7 +77,7 @@ namespace MistoQuente.UVC
 			private bool isRenderBeforeSceneRendering; // Indica se o render ocorre antes da renderização da cena
 			private bool isRendering; // Indica se o processo de renderização está ocorrendo
 
-            internal CameraInfo(UVCDevice device)
+			internal CameraInfo(UVCDevice device)
 			{
 				this.device = device; // Construtor que associa o dispositivo UVC com a instância
 			}
@@ -76,10 +85,11 @@ namespace MistoQuente.UVC
 			/**
 			 * Obtém o ID do dispositivo.
 			 */
-			public Int32 Id{
-				get { return device.id;  }
+			public Int32 Id
+			{
+				get { return device.id; }
 			}
-	
+
 			/**
 			 * Obtém o nome do dispositivo.
 			 */
@@ -150,52 +160,50 @@ namespace MistoQuente.UVC
 				return $"{base.ToString()}({currentWidth}x{currentHeight},id={Id},activeId={activeId},IsPreviewing={IsPreviewing})";
 			}
 
-            /**
+			/**
              * Inicia o processo de renderização da imagem do dispositivo UVC.
              * @param manager
              */
-            internal Coroutine StartRender(UVCManager manager, bool renderBeforeSceneRendering)
-            {
-                StopRender(manager);
-                isRenderBeforeSceneRendering = renderBeforeSceneRendering;
-                isRendering = true;
-                if (renderBeforeSceneRendering)
-                {
-                    return manager.StartCoroutine(OnRenderBeforeSceneRendering());
-                } else
-                {
-                    return manager.StartCoroutine(OnRender());
-                }
-            }
+			internal Coroutine StartRender(UVCManager manager, bool renderBeforeSceneRendering)
+			{
 
-            /**
+
+				//StopRender(manager);
+				isRenderBeforeSceneRendering = renderBeforeSceneRendering;
+				isRendering = true;
+
+				return manager.StartCoroutine(OnRender());
+
+			}
+
+			/**
              * Interrompe o processo de renderização da imagem do dispositivo UVC.
              * @param manager
              */
-            internal void StopRender(UVCManager manager)
-            {
-                if (isRendering)
-                {
-                    isRendering = false;
-                    if (isRenderBeforeSceneRendering)
-                    {
-                        manager.StopCoroutine(OnRenderBeforeSceneRendering());
-                    }
-                    else
-                    {
-                        manager.StopCoroutine(OnRender());
-                    }
-                }
-            }
+			internal void StopRender(UVCManager manager)
+			{
+				if (isRendering)
+				{
+					isRendering = false;
+					if (isRenderBeforeSceneRendering)
+					{
+						manager.StopCoroutine(OnRenderBeforeSceneRendering());
+					}
+					else
+					{
+						manager.StopCoroutine(OnRender());
+					}
+				}
+			}
 
-            /**
+			/**
 			* Para processamento de eventos de renderização
 			* Executado como uma rotina
 			* Solicita a renderização de imagens a partir de dispositivos UVC 
 			* para uma textura antes da renderização da cena
 			* (Executa a renderização da imagem antes da renderização da cena).
 			*/
-            private IEnumerator OnRenderBeforeSceneRendering()
+			private IEnumerator OnRenderBeforeSceneRendering()
 			{
 				var renderEventFunc = GetRenderEventFunc();
 				for (; activeId != 0;)
@@ -206,26 +214,38 @@ namespace MistoQuente.UVC
 				yield break;
 			}
 
-            /**
+			/**
    			  * Executa a renderização da imagem após a renderização da cena.
              */
-            private IEnumerator OnRender()
-            {
-                var renderEventFunc = GetRenderEventFunc();
-                for (; activeId != 0;)
-                {
-                    yield return new WaitForEndOfFrame();
-                    GL.IssuePluginEvent(renderEventFunc, activeId);
-                }
-                yield break;
-            }
 
-        }
+			void Update()
+			{
 
-        /**
+				//Invoke("OnRender", 2.0f); 
+			}
+			private IEnumerator OnRender()
+			{
+
+				Debug.Log($"Renderizando {device.id} em {cameraIndex}");
+
+				var renderEventFunc = GetRenderEventFunc();
+				for (; activeId != 0;)
+				{
+					if (Time.time > 2)
+					{
+						yield return new WaitForEndOfFrame();
+						GL.IssuePluginEvent(renderEventFunc, activeId);
+					}
+				}
+				yield break;
+			}
+
+		}
+
+		/**
 		 * Instância do SynchronizationContext para executar em uma thread principal.
 		 */
-        private SynchronizationContext mainContext;
+		private SynchronizationContext mainContext;
 		/**
 		 * Delegado para receber chamadas de retorno de eventos quando o estado dos dispositivos
 		 * UVC conectados ao dispositivo muda.
@@ -241,18 +261,18 @@ namespace MistoQuente.UVC
 		 */
 		private Dictionary<Int32, CameraInfo> cameraInfos = new Dictionary<int, CameraInfo>();
 
-        //--------------------------------------------------------------------------------
-        // Chamadas UnityEngine
-        //--------------------------------------------------------------------------------
-        // Start é chamado antes do primeiro quadro (frame).
-        IEnumerator Start()
+		//--------------------------------------------------------------------------------
+		// Chamadas UnityEngine
+		//--------------------------------------------------------------------------------
+		// Start é chamado antes do primeiro quadro (frame).
+		IEnumerator Start()
 		{
 #if (!NDEBUG && DEBUG && ENABLE_LOG)
 			Console.WriteLine($"{TAG}Start:");
 #endif
 			mainContext = SynchronizationContext.Current;
-            callback = OnDeviceChangedCallbackManager.Add(this);
-	
+			callback = OnDeviceChangedCallbackManager.Add(this);
+
 			yield return Initialize();
 		}
 
@@ -283,51 +303,66 @@ namespace MistoQuente.UVC
 			Console.WriteLine($"{TAG}OnDestroy:");
 #endif
 			StopAll();
-            OnDeviceChangedCallbackManager.Remove(this);
+			OnDeviceChangedCallbackManager.Remove(this);
+		}
+
+		async Task DelayAsync(int time)
+		{
+			await Task.Delay(time);
 		}
 
 		//--------------------------------------------------------------------------------
 		// Função de retorno de chamada do plugin quando o estado dos dispositivos UVC muda.
 		//--------------------------------------------------------------------------------
-        public void OnDeviceChanged(IntPtr devicePtr, bool attached)
-        {
-            var id = UVCDevice.GetId(devicePtr);
+		public async void OnDeviceChanged(IntPtr devicePtr, bool attached)
+		{
+			await DelayAsync(3000);
+
+			var id = UVCDevice.GetId(devicePtr);
 #if (!NDEBUG && DEBUG && ENABLE_LOG)
             Console.WriteLine($"{TAG}OnDeviceChangedInternal:id={id},attached={attached}");
 #endif
-            if (attached)
-            {
-                UVCDevice device = new UVCDevice(devicePtr);
+			if (attached)
+			{
+				UVCDevice device = new UVCDevice(devicePtr);
 #if (!NDEBUG && DEBUG && ENABLE_LOG)
                 Console.WriteLine($"{TAG}OnDeviceChangedInternal:device={device.ToString()}");
 #endif
-                if (HandleOnAttachEvent(device))
-                {
-                    attachedDevices.Add(device);
-                    StartPreview(device);
-                }
-            }
-            else
-            {
-                var found = attachedDevices.Find(item =>
-                {
-                    return item != null && item.id == id;
-                });
-                if (found != null)
-                {
-                    HandleOnDetachEvent(found);
-                    StopPreview(found);
-                    attachedDevices.Remove(found);
-                }
-            }
-        }
-   
-        //================================================================================
-        /**
+
+
+
+
+
+				if (HandleOnAttachEvent(device))
+				{
+					attachedDevices.Add(device);
+
+					StartPreview(device);
+				}
+			}
+			else
+			{
+				var found = attachedDevices.Find(item =>
+				{
+					return item != null && item.id == id;
+				});
+				if (found != null)
+				{
+					await DelayAsync(20);
+
+					HandleOnDetachEvent(found);
+					StopPreview(found);
+					attachedDevices.Remove(found);
+				}
+			}
+		}
+
+		//================================================================================
+		/**
 		* Obtém a lista de dispositivos UVC conectados.
 		* @return Lista de dispositivos UVC conectados
 		 */
-        public List<CameraInfo> GetAttachedDevices()
+		public List<CameraInfo> GetAttachedDevices()
 		{
 			var result = new List<CameraInfo>(cameraInfos.Count);
 
@@ -339,130 +374,84 @@ namespace MistoQuente.UVC
 			return result;
 		}
 
-//		/**
-//		 * 対応解像度を取得
-//		 * @param camera 対応解像度を取得するUVC機器を指定
-//		 * @return 対応解像度 既にカメラが取り外されている/closeしているのであればnull
-//		 */
-//		public SupportedFormats GetSupportedVideoSize(CameraInfo camera)
-//		{
-//			var info = (camera != null) ? Get(camera.DeviceName) : null;
-//			if ((info != null) && info.IsOpen)
-//			{
-//				return GetSupportedVideoSize(info.DeviceName);
-//			}
-//			else
-//			{
-//				return null;
-//			}
-//		}
-
-//		/**
-//		 * 解像度を変更
-//		 * @param 解像度を変更するUVC機器を指定
-//		 * @param 変更する解像度を指定, nullならデフォルトに戻す
-//		 * @param 解像度が変更されたかどうか
-//		 */
-//		public bool SetVideoSize(CameraInfo camera, SupportedFormats.Size size)
-//		{
-//			var info = (camera != null) ? Get(camera.DeviceName) : null;
-//			var width = size != null ? size.Width : DefaultWidth;
-//			var height = size != null ? size.Height : DefaultHeight;
-//			if ((info != null) && info.IsPreviewing)
-//			{
-//				if ((width != info.CurrentWidth) || (height != info.CurrentHeight))
-//				{   // 解像度が変更になるとき
-//					StopPreview(info.DeviceName);
-//					StartPreview(info.DeviceName, width, height);
-//					return true;
-//				}
-//			}
-//			return false;
-//		}
 
 		// Esta função inicia a visualização de um dispositivo UVC. 
 		// Ela configura as configurações de resolução, cria uma textura para exibir a 
 		// visualização, inicia a captura de vídeo e renderiza a imagem. A criação da 
 		// textura é feita na thread principal usando mainContext.Post.
 
-		private void StartPreview(UVCDevice device)
+		private async void StartPreview(UVCDevice device)
 		{
+
+
+			await DelayAsync(2000);
+
 			var info = CreateIfNotExist(device);
-			if ((info != null) && !info.IsPreviewing) {
+
+
+
+			if ((info != null) && !info.IsPreviewing)
+			{
 
 				int width = DefaultWidth;
 				int height = DefaultHeight;
 
-//				var supportedVideoSize = GetSupportedVideoSize(deviceName);
-//				if (supportedVideoSize == null)
-//				{
-//					throw new ArgumentException("fauled to get supported video size");
-//				}
-
-//				// 解像度の選択処理
-//				if ((UVCDrawers != null) && (UVCDrawers.Length > 0))
-//				{
-//					foreach (var drawer in UVCDrawers)
-//					{
-//						if ((drawer is IUVCDrawer) && ((drawer as IUVCDrawer).CanDraw(this, info.device)))
-//						{
-//							var size = (drawer as IUVCDrawer).OnUVCSelectSize(this, info.device, supportedVideoSize);
-//#if (!NDEBUG && DEBUG && ENABLE_LOG)
-//							Console.WriteLine($"{TAG}StartPreview:selected={size}");
-//#endif
-//							if (size != null)
-//							{   // 一番最初に見つかった描画可能なIUVCDrawersがnull以外を返せばそれを使う
-//								width = size.Width;
-//								height = size.Height;
-//								break;
-//							}
-//						}
-//					}
-//				}
-
-				// FIXME Confirmação de resoluções compatíveis
 #if (!NDEBUG && DEBUG && ENABLE_LOG)
 				Console.WriteLine($"{TAG}StartPreview:({width}x{height}),id={device.id}");
 #endif
-                int[] frameTypes = {
-                    PreferH264 ? FRAME_TYPE_H264 : FRAME_TYPE_MJPEG,
-                    PreferH264 ? FRAME_TYPE_MJPEG : FRAME_TYPE_H264,
-                };
-                foreach (var frameType in frameTypes)
-                {
-                    if (Resize(device.id, frameType, width, height) == 0)
-                    {
-                        info.frameType = frameType;
-                        break;
-                    }
-                }
-                    
+				int[] frameTypes = {
+					PreferH264 ? FRAME_TYPE_H264 : FRAME_TYPE_MJPEG,
+					PreferH264 ? FRAME_TYPE_MJPEG : FRAME_TYPE_H264,
+				};
+
+				foreach (var frameType in frameTypes)
+				{
+					await DelayAsync(200);
+
+					if (Resize(device.id, frameType, width, height) == 0)
+					{
+						info.frameType = frameType;
+						//break;
+					}
+				}
+
 				info.SetSize(width, height);
-				info.activeId = device.id;
+				info.activeId = Mathf.Abs(device.id);
+
+				await DelayAsync(20);
+
 				mainContext.Post(__ =>
 				{   // A criação da textura deve ser feita na thread principal
 #if (!NDEBUG && DEBUG && ENABLE_LOG)
-					Console.WriteLine($"{TAG}映像受け取り用テクスチャ生成:({width}x{height})");
+					Console.WriteLine($"{TAG} Geração de textura para recepção de vídeo:({width}x{height})");
 #endif
+
+
 					Texture2D tex = new Texture2D(
 							width, height,
 							TextureFormat.ARGB32,
 							false, /* mipmap */
 							true /* linear */);
+
 					tex.filterMode = FilterMode.Point;
 					tex.Apply();
 					info.previewTexture = tex;
 					var nativeTexPtr = info.previewTexture.GetNativeTexturePtr();
 					Start(device.id, nativeTexPtr.ToInt32());
 					HandleOnStartPreviewEvent(info);
-					info.StartRender(this, RenderBeforeSceneRendering);
+					info.StartRender(this, false);
 				}, null);
 			}
 		}
 		//  Esta função interrompe a visualização de um dispositivo UVC. Ela para a captura de vídeo, libera a textura e 
 		// realiza ações associadas à interrupção da visualização.
-		private void StopPreview(UVCDevice device) {
+		private void StopPreview(UVCDevice device)
+		{
+			Debug.Log("MQ: StopPreview");
+			cameraIndex--;
+
 			var info = Get(device);
+
 			if ((info != null) && info.IsPreviewing)
 			{
 				mainContext.Post(__ =>
@@ -478,12 +467,15 @@ namespace MistoQuente.UVC
 
 		// Esta função interrompe todas as visualizações em dispositivos UVC 
 		// atualmente ativos, chamando StopPreview para cada um deles.
-		private void StopAll() {
+		private void StopAll()
+		{
 			List<CameraInfo> values = new List<CameraInfo>(cameraInfos.Values);
 			foreach (var info in values)
 			{
 				StopPreview(info.device);
 			}
+			Debug.Log("MQ: StopAll");
+			cameraIndex = 0;
 		}
 
 		//--------------------------------------------------------------------------------
@@ -495,27 +487,21 @@ namespace MistoQuente.UVC
 		 */
 		private bool HandleOnAttachEvent(UVCDevice device/*NonNull*/)
 		{
-			if ((UVCDrawers == null) || (UVCDrawers.Length == 0))
-			{   // Quando nenhum IUVCDrawer está atribuído, retorna true (usar o dispositivo UVC conectado).
+			idCamera[cameraIndex - 1].text = $"{device.id}";
+			
+			if (cameraIndex <= 2)
+			{
+				cameraIndex++;
 				return true;
 			}
 			else
-			{
-				bool hasDrawer = false;
-				foreach (var drawer in UVCDrawers)
-				{
-					if (drawer is IUVCDrawer)
-					{
-						hasDrawer = true;
-						if ((drawer as IUVCDrawer).OnUVCAttachEvent(this, device))
-						{   // Se pelo menos um IUVCDrawer retornar true, retorna true (usar o dispositivo UVC conectado).
-							return true;
-						}
-					}
-				}
-				// Quando nenhum IUVCDrawer está atribuído, retorna true (usar o dispositivo UVC conectado).
-				return !hasDrawer;
-			}
+				cameraIndex = 1;
+
+			
+			
+
+
+			return false;
 		}
 
 		/**
@@ -524,13 +510,22 @@ namespace MistoQuente.UVC
 		 */
 		private void HandleOnDetachEvent(UVCDevice device/*NonNull*/)
 		{
+			Debug.Log($"Dispositivo {device.id} Desconectado");
+
 			if ((UVCDrawers != null) && (UVCDrawers.Length > 0))
 			{
 				foreach (var drawer in UVCDrawers)
 				{
 					if (drawer is IUVCDrawer)
 					{
-						(drawer as IUVCDrawer).OnUVCDetachEvent(this, device);
+						if (cameraIndex > 0)
+						{
+							cameraIndex--;
+
+							Debug.Log($"Cameras Conectadas: {cameraIndex} - Dispositivo {device.id} desconectado");
+
+							(drawer as IUVCDrawer).OnUVCDetachEvent(this, device);
+						}
 					}
 				}
 			}
@@ -542,24 +537,9 @@ namespace MistoQuente.UVC
 		 */
 		void HandleOnStartPreviewEvent(CameraInfo info)
 		{
-#if (!NDEBUG && DEBUG && ENABLE_LOG)
-			Console.WriteLine($"{TAG}HandleOnStartPreviewEvent:({info})");
-#endif
-			if ((info != null) && info.IsPreviewing && (UVCDrawers != null))
-			{
-				foreach (var drawer in UVCDrawers)
-				{
-					if ((drawer is IUVCDrawer) && (drawer as IUVCDrawer).CanDraw(this, info.device))
-					{
-						(drawer as IUVCDrawer).OnUVCStartEvent(this, info.device, info.previewTexture);
-					}
-				}
-			} else {
-#if (!NDEBUG && DEBUG && ENABLE_LOG)
-				Console.WriteLine($"{TAG}HandleOnStartPreviewEvent:No UVCDrawers");
-#endif
-			}
+			(UVCDrawers[cameraIndex - 1] as IUVCDrawer).OnUVCStartEvent(this, info.device, info.previewTexture);
 		}
+
 
 		/**
 		 * Lida com a ação quando a captura de vídeo de um dispositivo UVC é interrompida.
@@ -576,7 +556,7 @@ namespace MistoQuente.UVC
 				{
 					if ((drawer is IUVCDrawer) && (drawer as IUVCDrawer).CanDraw(this, info.device))
 					{
-						(drawer as IUVCDrawer).OnUVCStopEvent(this, info.device);
+						//(drawer as IUVCDrawer).OnUVCStopEvent(this, info.device);
 					}
 				}
 			}
@@ -708,101 +688,102 @@ namespace MistoQuente.UVC
 			}
 		}
 
-        //--------------------------------------------------------------------------------
-        // Definições e declarações relacionadas a plugins nativos
-        //--------------------------------------------------------------------------------
+		//--------------------------------------------------------------------------------
+		// Definições e declarações relacionadas a plugins nativos
+		//--------------------------------------------------------------------------------
 		/**
 		 * Função nativa (C/C++) para obtenção de eventos de renderização no plugin
 		 */
 		[DllImport("unityuvcplugin")]
 		private static extern IntPtr GetRenderEventFunc();
-        /**
+		/**
 		 * Obtém uma função de evento de renderização para uso com plugins nativos.
 		 */
-        [DllImport("unityuvcplugin", EntryPoint = "Config")]
-        private static extern Int32 Config(Int32 deviceId, Int32 enabled, Int32 useFirstConfig);
-        /**
+		[DllImport("unityuvcplugin", EntryPoint = "Config")]
+		private static extern Int32 Config(Int32 deviceId, Int32 enabled, Int32 useFirstConfig);
+		/**
 		 * Realiza configurações iniciais, possivelmente relacionadas às configurações de um dispositivo.
 		 */
-        [DllImport("unityuvcplugin", EntryPoint ="Start")]
+		[DllImport("unityuvcplugin", EntryPoint = "Start")]
 		private static extern Int32 Start(Int32 deviceId, Int32 tex);
 		/**
 		 * Inicia a captura de vídeo de um dispositivo UVC e a exibe em uma textura. 
 		 deviceId se refere ao identificador do dispositivo e tex à textura na qual a captura de 
 		 vídeo é renderizada.
 		 */
-		[DllImport("unityuvcplugin", EntryPoint ="Stop")]
+		[DllImport("unityuvcplugin", EntryPoint = "Stop")]
 		private static extern Int32 Stop(Int32 deviceId);
 		/**
 		 * Para a captura de vídeo de um dispositivo UVC.
 		 */
 		[DllImport("unityuvcplugin")]
 		private static extern Int32 Resize(Int32 deviceId, Int32 frameType, Int32 width, Int32 height);
+
 	}   // Define o tamanho da imagem de vídeo a ser capturada pelo dispositivo UVC.
 
-    /**
+	/**
 	* No IL2Cpp, não é possível realizar marshalling de delegados usados para callbacks de C/C++, 
 	então é necessário processar em funções estáticas.
 	* No entanto, dessa forma, não é possível chamar funções do objeto que fez a chamada original, 
 	então um gerenciador de classes é criado.
 	* Por enquanto, ele aceita apenas o UVCManager, então não foi implementada uma interface.
      */
-    public static class OnDeviceChangedCallbackManager
-    {
-        //  Esta é uma classe que gerencia os callbacks de eventos de mudança de dispositivos UVC.
-        [UnmanagedFunctionPointer(CallingConvention.StdCall)]
-        public delegate void OnDeviceChangedFunc(Int32 id, IntPtr devicePtr, bool attached);
+	public static class OnDeviceChangedCallbackManager
+	{
+		//  Esta é uma classe que gerencia os callbacks de eventos de mudança de dispositivos UVC.
+		[UnmanagedFunctionPointer(CallingConvention.StdCall)]
+		public delegate void OnDeviceChangedFunc(Int32 id, IntPtr devicePtr, bool attached);
 
-        /**
+		/**
 		 * tipo de delegado usado para representar uma função de callback que recebe 
 		 informações sobre a mudança de dispositivo UVC.
 		 */
-        [DllImport("unityuvcplugin")]
-        private static extern IntPtr Register(Int32 id, OnDeviceChangedFunc callback);
-        /**
+		[DllImport("unityuvcplugin")]
+		private static extern IntPtr Register(Int32 id, OnDeviceChangedFunc callback);
+		/**
 		 * Registra um callback de evento de mudança de dispositivo na biblioteca nativa.
 		 */
-        [DllImport("unityuvcplugin")]
-        private static extern IntPtr Unregister(Int32 id);
+		[DllImport("unityuvcplugin")]
+		private static extern IntPtr Unregister(Int32 id);
 
-        private static Dictionary<Int32, UVCManager> sManagers = new Dictionary<Int32, UVCManager>();
-  
-        /**
+		private static Dictionary<Int32, UVCManager> sManagers = new Dictionary<Int32, UVCManager>();
+
+		/**
          * Remove o registro de um callback de evento de mudança de dispositivo.
          */
-        public static OnDeviceChangedFunc Add(UVCManager manager)
-        {
-            Int32 id = manager.GetHashCode();
-            OnDeviceChangedFunc callback = new OnDeviceChangedFunc(OnDeviceChanged);
-            sManagers.Add(id, manager);
-            Register(id, callback);
-            return callback;
-        }
+		public static OnDeviceChangedFunc Add(UVCManager manager)
+		{
+			Int32 id = manager.GetHashCode();
+			OnDeviceChangedFunc callback = new OnDeviceChangedFunc(OnDeviceChanged);
+			sManagers.Add(id, manager);
+			Register(id, callback);
+			return callback;
+		}
 
-        /**
+		/**
          * Adiciona um callback de evento de mudança de dispositivo gerenciado por UVCManager ao gerenciador. 
 		 Isso permite que os callbacks sejam acionados quando ocorrem eventos de mudança de dispositivo UVC.
          */
-        public static void Remove(UVCManager manager)
-        {
-            Int32 id = manager.GetHashCode();
-            Unregister(id);
-            sManagers.Remove(id);
-        }
+		public static void Remove(UVCManager manager)
+		{
+			Int32 id = manager.GetHashCode();
+			Unregister(id);
+			sManagers.Remove(id);
+		}
 
 		// Remove um callback de evento de mudança de dispositivo do gerenciador.
 
-        [MonoPInvokeCallback(typeof(OnDeviceChangedFunc))]
-        public static void OnDeviceChanged(Int32 id, IntPtr devicePtr, bool attached)
-        {
-            var manager = sManagers.ContainsKey(id) ? sManagers[id] : null;
-            if (manager != null)
-            {
-                manager.OnDeviceChanged(devicePtr, attached);
-            }
-        }
-    } // Esta função é acionada quando um evento de mudança de dispositivo UVC ocorre. 
-	// Ela chama a função OnDeviceChanged do UVCManager correspondente.
+		[MonoPInvokeCallback(typeof(OnDeviceChangedFunc))]
+		public static void OnDeviceChanged(Int32 id, IntPtr devicePtr, bool attached)
+		{
+			var manager = sManagers.ContainsKey(id) ? sManagers[id] : null;
+			if (manager != null)
+			{
+				manager.OnDeviceChanged(devicePtr, attached);
+			}
+		}
+	} // Esta função é acionada quando um evento de mudança de dispositivo UVC ocorre. 
+	  // Ela chama a função OnDeviceChanged do UVCManager correspondente.
 
 
-}   // namespace MistoQuente.UVC
+}   // namespace Serenegiant.UVC

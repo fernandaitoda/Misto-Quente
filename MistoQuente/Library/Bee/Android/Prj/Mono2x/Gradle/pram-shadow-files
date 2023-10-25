@@ -1,0 +1,6 @@
+unityLibrary/src/main/assets/bin/Data
+unityLibrary/src/main/jniLibs/armeabi-v7a/libmain.so
+unityLibrary/src/main/jniLibs/armeabi-v7a/libunity.so
+unityLibrary/src/main/jniLibs/armeabi-v7a/libmonobdwgc-2.0.so
+unityLibrary/src/main/jniLibs/armeabi-v7a/libMonoPosixHelper.so
+unityLibrary/src/main/jniLibs/armeabi-v7a/libmono-native.so

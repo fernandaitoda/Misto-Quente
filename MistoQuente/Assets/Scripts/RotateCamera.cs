@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace MistoQuente.UVC 
+namespace Serenegiant.UVC 
 {
 
     public class RotateCamera : MonoBehaviour

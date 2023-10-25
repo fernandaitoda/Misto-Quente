@@ -17,8 +17,9 @@ using UnityEngine.UI;
 // captura de vídeo.
 
 
-namespace MistoQuente.UVC
+namespace Serenegiant.UVC
 {
+
 	public class UVCDrawer : MonoBehaviour, IUVCDrawer
 	{
 		/**
@@ -35,13 +36,15 @@ namespace MistoQuente.UVC
 		public int DefaultHeight = 720;
 
 		/**
+		* O GameObject que mantém
 		 * 接続時及び描画時のフィルタ用
 		 */
 		public UVCFilter[] UVCFilters;
 
 		/**
-		 * O GameObject que mantém o Material de destino para renderizar a imagem do dispositivo UVC.
- 			* Se não estiver configurado, o mesmo GameObject onde este script foi atribuído será usado.
+		* O GameObject que mantém o Material de destino para renderizar a imagem do dispositivo UVC.
+ 		* Se não estiver configurado, o mesmo GameObject onde este script foi atribuído será usado.
+
 		 */
 		public List<GameObject> RenderTargets;
 
@@ -49,6 +52,9 @@ namespace MistoQuente.UVC
 		private const string TAG = "UVCDrawer#";
 
 		/**
+		 * UVC機器からの映像の描画先Material
+		 * TargetGameObjectから取得する
+		 * 優先順位：
 		* Material de destino para renderizar a imagem do dispositivo UVC.
 		* Obtido a partir do TargetGameObject.
 		* Prioridade:
@@ -80,11 +86,11 @@ namespace MistoQuente.UVC
 
 		}
 
-//		// Update is called once per frame
-//		void Update()
-//		{
-//
-//		}
+		//		// Update is called once per frame
+		//		void Update()
+		//		{
+		//
+		//		}
 
 		//================================================================================
 
@@ -94,7 +100,7 @@ namespace MistoQuente.UVC
 		* @param manager O UVCManager que fez a chamada.
 		* @param device Informações sobre o dispositivo UVC alvo.
 		* @return true: Usar o dispositivo UVC, false: Não usar o dispositivo UVC.
-		 */
+		*/
 		public bool OnUVCAttachEvent(UVCManager manager, UVCDevice device)
 		{
 #if (!NDEBUG && DEBUG && ENABLE_LOG)
@@ -103,17 +109,16 @@ namespace MistoQuente.UVC
 		// XXX Na implementação atual, basicamente aceitamos todos os dispositivos UVC.
 		// No entanto, omitimos o THETA S, THETA V e THETA Z1, pois eles têm interfaces que não podem capturar vídeo.
 		// Da mesma forma que CanDraw, permitimos configurar um filtro de dispositivos UVC no Inspector.
-
 			var result = !device.IsRicoh || device.IsTHETA;
 
 			result &= UVCFilter.Match(device, UVCFilters);
 
-			return result;
+			return true;
 		}
 
 		/**
 		 * UVC機器が取り外された
-		 * Implementação do IOnUVCDetachEventHandler.
+		* Implementação do IOnUVCDetachEventHandler.
 		 * @param manager O UVCManager que fez a chamada.
 		 * @param device As informações do dispositivo UVC alvo.
 		 */
@@ -201,7 +206,7 @@ namespace MistoQuente.UVC
 
 		//================================================================================
 		/**
-		 * 描画先を更新
+		 * Atualizar destino do desenho
 		 */
 		private void UpdateTarget()
 		{
@@ -222,16 +227,16 @@ namespace MistoQuente.UVC
 							found = true;
 						}
 #if (!NDEBUG && DEBUG && ENABLE_LOG)
-						Console.WriteLine($"{TAG}UpdateTarget:material={material}");
+						Console.WriteLine($"MQ:{TAG}UpdateTarget:material={material}");
 #endif
 					}
 					i++;
 				}
 			}
 			if (!found)
-			{   //  When no rendering destination is found,
-				// attempt to retrieve it from the GameObject where this script is added.
-				// Should gameObject be set to XXX RenderTargets?
+			{   // Se nenhum destino de desenho for encontrado, este script
+				// Tenta obter do AddComponent GameObject
+				// Definir gameObject como XXX RenderTargets?
 				TargetMaterials = new UnityEngine.Object[1];
 				SavedTextures = new Texture[1];
 				quaternions = new Quaternion[1];
@@ -246,41 +251,41 @@ namespace MistoQuente.UVC
 		}
 
 		/**
-		* Obtém um material para desenhar uma imagem como textura.
-		* Obtém o material a partir do GameObject especificado, se ele contiver Skybox/Renderer/RawImage/Material.
-		* Se várias instâncias de cada um estiverem atribuídas, retorna o primeiro encontrado.
-		* Prioridade: Skybox > Renderer > RawImage > Material
+		* Obtenha o material para desenhar a imagem como textura
+		* Se o GameObject especificado tiver Skybox/Renderer/RawImage/Material, obtenha o Material dele.
+		* Se cada um for alocado várias vezes, retorne o primeiro disponível encontrado.
+		* Prioridade: Skybox > Renderizador > RawImage > Material
 		* @param target
-		* @return Retorna nulo se não for encontrado.
+		* @return Retorna nulo se não for encontrado
 		 */
 		UnityEngine.Object GetTargetMaterial(GameObject target/*NonNull*/)
 		{
 			// Tente obter o Skybox.
-			var skyboxs = target.GetComponents<Skybox>();
-			if (skyboxs != null)
-			{
-				foreach (var skybox in skyboxs)
-				{
-					if (skybox.isActiveAndEnabled && (skybox.material != null))
-					{
-						RenderSettings.skybox = skybox.material;
-						return skybox.material;
-					}
-				}
-			}
+			// var skyboxs = target.GetComponents<Skybox>();
+			// if (skyboxs != null)
+			// {
+			// 	foreach (var skybox in skyboxs)
+			// 	{
+			// 		if (skybox.isActiveAndEnabled && (skybox.material != null))
+			// 		{
+			// 			RenderSettings.skybox = skybox.material;
+			// 			return skybox.material;
+			// 		}
+			// 	}
+			// }
 			// Se não for possível obter um Skybox, tente obter um Renderer.
-			var renderers = target.GetComponents<Renderer>();
-			if (renderers != null)
-			{
-				foreach (var renderer in renderers)
-				{
-					if (renderer.enabled && (renderer.material != null))
-					{
-						return renderer.material;
-					}
+			// var renderers = target.GetComponents<Renderer>();
+			// if (renderers != null)
+			// {
+			// 	foreach (var renderer in renderers)
+			// 	{
+			// 		if (renderer.enabled && (renderer.material != null))
+			// 		{
+			// 			return renderer.material;
+			// 		}
 
-				}
-			}
+			// 	}
+			// }
 			// Se não for possível obter um Skybox ou um Renderer, tente obter um RawImage.
 			var rawImages = target.GetComponents<RawImage>();
 			if (rawImages != null)
@@ -294,12 +299,15 @@ namespace MistoQuente.UVC
 
 				}
 			}
-			// Se não for possível obter um Skybox, um Renderer ou um RawImage, tente obter um Material.
-			var material = target.GetComponent<Material>();
-			if (material != null)
-			{
-				return material;
+			else {
+				Debug.Log("MQ: RawImage nao encontrado");
 			}
+			// Se não for possível obter um Skybox, um Renderer ou um RawImage, tente obter um Material.
+		// 	var material = target.GetComponent<Material>();
+		// 	if (material != null)
+		// 	{
+		// 		return material;
+		// 	}
 			return null;
 		}
 
@@ -332,20 +340,22 @@ namespace MistoQuente.UVC
 		{
 			for (int i = 0; i < SavedTextures.Length; i++)
 			{
+				Debug.Log("MQ: Clear Textures");
 				SavedTextures[i] = null;
 			}
 		}
 
 		/**
-		 * Processamento no início da aquisição de vídeo.
-		 * @param tex Textura para receber o vídeo.
-		 */
+		* Processamento no início da aquisição da imagem
+		* @param tex Textura para receber a imagem
+		*/
 		private void HandleOnStartPreview(Texture tex)
 		{
 #if (!NDEBUG && DEBUG && ENABLE_LOG)
 			Console.WriteLine($"{TAG}HandleOnStartPreview:({tex})");
 #endif
 			int i = 0;
+
 			foreach (var target in TargetMaterials)
 			{
 				if (target is Material)
@@ -359,7 +369,7 @@ namespace MistoQuente.UVC
 				else if (target is RawImage)
 				{
 #if (!NDEBUG && DEBUG && ENABLE_LOG)
-					Console.WriteLine($"{TAG}HandleOnStartPreview:assign Texture to RawImage({target})");
+					Console.WriteLine($"MQ:{TAG}HandleOnStartPreview:assign Texture to RawImage({target})");
 #endif
 					SavedTextures[i++] = (target as RawImage).texture;
 					(target as RawImage).texture = tex;
@@ -368,20 +378,20 @@ namespace MistoQuente.UVC
 		}
 
 		/**
-		 * Processamento no lado do Unity quando a captura de vídeo é concluída."
+		 * Processamento no lado do Unity quando a aquisição da imagem for concluída
 		 */
 		private void HandleOnStopPreview()
 		{
 #if (!NDEBUG && DEBUG && ENABLE_LOG)
-			Console.WriteLine($"{TAG}HandleOnStopPreview:");
+			Console.WriteLine($"MQ:{TAG}HandleOnStopPreview:");
 #endif
-			// 描画先のテクスチャをもとに戻す
+			// Restaurar a textura de destino do desenho
 			RestoreTexture();
 #if (!NDEBUG && DEBUG && ENABLE_LOG)
-			Console.WriteLine($"{TAG}HandleOnStopPreview:finished");
+			Console.WriteLine($"MQ: {TAG}HandleOnStopPreview:finished");
 #endif
 		}
 
 	} // class UVCDrawer
 
-} // namespace MistoQuente.UVC
+} // namespace Serenegiant.UVC

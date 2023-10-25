@@ -8,7 +8,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace MistoQuente.UVC
+namespace Serenegiant.UVC
 {
 	/**
 	 * Classe de definição de filtro para dispositivos UVC
@@ -135,4 +135,4 @@ namespace MistoQuente.UVC
 
 	} // class UVCFilter
 
-} // namespace MistoQuente.UVC
+} // namespace Serenegiant.UVC

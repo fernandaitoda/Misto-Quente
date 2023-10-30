@@ -28,7 +28,7 @@ namespace Serenegiant.UVC
 		[SerializeField] TextMeshProUGUI[] idCamera;
 
 		private const string TAG = "UVCManager#";
-		private const string FQCN_DETECTOR = "com.serenegiant.usb.DeviceDetectorFragment";
+		private const string FQCN_DETECTOR = "com.serenegiant.mistoquente.usb.DeviceDetectorFragment";
 		private const int FRAME_TYPE_MJPEG = 0x000007;
 		private const int FRAME_TYPE_H264 = 0x000014;
 		private const int FRAME_TYPE_H264_FRAME = 0x030011;
@@ -221,21 +221,17 @@ namespace Serenegiant.UVC
 			void Update()
 			{
 
-				//Invoke("OnRender", 2.0f); 
+				//idCamera[cameraIndex - 1].text = "555";
 			}
 			private IEnumerator OnRender()
 			{
-
 				Debug.Log($"Renderizando {device.id} em {cameraIndex}");
 
 				var renderEventFunc = GetRenderEventFunc();
 				for (; activeId != 0;)
 				{
-					if (Time.time > 2)
-					{
-						yield return new WaitForEndOfFrame();
-						GL.IssuePluginEvent(renderEventFunc, activeId);
-					}
+					yield return new WaitForEndOfFrame();
+					GL.IssuePluginEvent(renderEventFunc, activeId);
 				}
 				yield break;
 			}
@@ -316,7 +312,7 @@ namespace Serenegiant.UVC
 		//--------------------------------------------------------------------------------
 		public async void OnDeviceChanged(IntPtr devicePtr, bool attached)
 		{
-			await DelayAsync(3000);
+			//await DelayAsync(3000);
 
 			var id = UVCDevice.GetId(devicePtr);
 #if (!NDEBUG && DEBUG && ENABLE_LOG)
@@ -348,7 +344,7 @@ namespace Serenegiant.UVC
 				});
 				if (found != null)
 				{
-					await DelayAsync(20);
+					//await DelayAsync(20);
 
 					HandleOnDetachEvent(found);
 					StopPreview(found);
@@ -384,7 +380,7 @@ namespace Serenegiant.UVC
 		{
 
 
-			await DelayAsync(2000);
+			//await DelayAsync(2000);
 
 			var info = CreateIfNotExist(device);
 
@@ -406,19 +402,19 @@ namespace Serenegiant.UVC
 
 				foreach (var frameType in frameTypes)
 				{
-					await DelayAsync(200);
+					//await DelayAsync(200);
 
 					if (Resize(device.id, frameType, width, height) == 0)
 					{
 						info.frameType = frameType;
-						//break;
+						break;
 					}
 				}
 
 				info.SetSize(width, height);
 				info.activeId = Mathf.Abs(device.id);
 
-				await DelayAsync(20);
+				//await DelayAsync(20);
 
 				mainContext.Post(__ =>
 				{   // A criação da textura deve ser feita na thread principal
@@ -488,7 +484,7 @@ namespace Serenegiant.UVC
 		private bool HandleOnAttachEvent(UVCDevice device/*NonNull*/)
 		{
 			idCamera[cameraIndex - 1].text = $"{device.id}";
-			
+
 			if (cameraIndex <= 2)
 			{
 				cameraIndex++;
@@ -496,10 +492,6 @@ namespace Serenegiant.UVC
 			}
 			else
 				cameraIndex = 1;
-
-			
-			
-
 
 			return false;
 		}

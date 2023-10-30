@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/launcher/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rHK/values-zh-rHK.xml",
+            "outputFile": "C:\\Users\\Victor\\Documents\\Misto-Quente\\MistoQuente\\Library\\PramData\\AndroidApplicationController\\Cache\\com.serenegiant.mistoquente\\gradle-project\\launcher\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh-rHK\\values-zh-rHK.xml",
             "map": [
                 {
-                    "source": "/home/fernanda/.gradle/caches/transforms-3/88262e2acf03b53dbbc7f81bfce1731f/transformed/core-1.6.0/res/values-zh-rHK/values-zh-rHK.xml",
+                    "source": "C:\\Users\\Victor\\.gradle\\caches\\transforms-3\\88262e2acf03b53dbbc7f81bfce1731f\\transformed\\core-1.6.0\\res\\values-zh-rHK\\values-zh-rHK.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

@@ -2,8 +2,6 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - Serenegiant.AndroidUtils
-    - Serenegiant.UVC.SettingsButton
-    - Serenegiant.UVC.SettingsPanel
     - Serenegiant.UVC.UVCDrawer
     - Serenegiant.UVC.UVCManager
     Unity.Mobile.AndroidLogcat.Editor.dll:
@@ -22,7 +20,6 @@ ScriptsOnlyBuild:
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
-    - TMPro.TextMeshProUGUI
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -30,12 +27,9 @@ ScriptsOnlyBuild:
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
-    - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
-    - UnityEngine.UI.Image
     - UnityEngine.UI.RawImage
-    - UnityEngine.UI.Slider
   serializedClasses:
     Unity.TextMeshPro:
     - TMPro.FaceInfo_Legacy
@@ -51,27 +45,18 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteCharacter
     - TMPro.TMP_SpriteGlyph
     - TMPro.TMP_Style
-    - TMPro.VertexGradient
     UnityEngine.CoreModule:
-    - UnityEngine.Events.ArgumentCache
     - UnityEngine.Events.PersistentCallGroup
-    - UnityEngine.Events.PersistentListenerMode
     UnityEngine.TextCoreFontEngineModule:
     - UnityEngine.TextCore.FaceInfo
     - UnityEngine.TextCore.Glyph
     - UnityEngine.TextCore.GlyphMetrics
     - UnityEngine.TextCore.GlyphRect
     UnityEngine.UI:
-    - UnityEngine.UI.AnimationTriggers
-    - UnityEngine.UI.Button/ButtonClickedEvent
-    - UnityEngine.UI.ColorBlock
     - UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
-    - UnityEngine.UI.Navigation
-    - UnityEngine.UI.Slider/SliderEvent
-    - UnityEngine.UI.SpriteState
   methodsToPreserve: []
   sceneClasses:
-    Assets/Scenes/SampleScene.unity:
+    Assets/UVC4UnityAndroidPlugin/Samples/Scenes/UVC2Dx2Scene.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -95,43 +80,33 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 16642}
+      Script: {instanceID: 17242}
     - Class: 114
-      Script: {instanceID: 17238}
+      Script: {instanceID: 17372}
     - Class: 114
-      Script: {instanceID: 17368}
+      Script: {instanceID: 17672}
     - Class: 114
-      Script: {instanceID: 17668}
+      Script: {instanceID: 17884}
     - Class: 114
-      Script: {instanceID: 17880}
+      Script: {instanceID: 18192}
     - Class: 114
-      Script: {instanceID: 18172}
+      Script: {instanceID: 19068}
     - Class: 114
-      Script: {instanceID: 18188}
+      Script: {instanceID: 19184}
     - Class: 114
-      Script: {instanceID: 19002}
+      Script: {instanceID: 19440}
     - Class: 114
-      Script: {instanceID: 19072}
+      Script: {instanceID: 20152}
     - Class: 114
-      Script: {instanceID: 19188}
+      Script: {instanceID: 20716}
     - Class: 114
-      Script: {instanceID: 19442}
+      Script: {instanceID: 20818}
     - Class: 114
-      Script: {instanceID: 20088}
+      Script: {instanceID: 21192}
     - Class: 114
-      Script: {instanceID: 20164}
+      Script: {instanceID: 21582}
     - Class: 114
-      Script: {instanceID: 20732}
-    - Class: 114
-      Script: {instanceID: 20834}
-    - Class: 114
-      Script: {instanceID: 20884}
-    - Class: 114
-      Script: {instanceID: 21208}
-    - Class: 114
-      Script: {instanceID: 21598}
-    - Class: 114
-      Script: {instanceID: 22290}
+      Script: {instanceID: 33558}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -147,6 +122,10 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 258
+      Script: {instanceID: 0}
+    - Class: 850595691
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -469,12 +448,6 @@ ScriptsOnlyBuild:
     className: PlayerQuitHandler
   - hash:
       serializedVersion: 2
-      Hash: 67798f8219c429b10848f1f4c08003ed
-    assemblyName: Assembly-CSharp
-    namespaceName: Serenegiant.UVC
-    className: RotateCamera
-  - hash:
-      serializedVersion: 2
       Hash: 4aeaabfb5368e1c79d66e90575c29ce1
     assemblyName: Assembly-CSharp
     namespaceName: 
@@ -499,7 +472,7 @@ ScriptsOnlyBuild:
     className: UnityOnControllerColliderHitMessageListener
   - hash:
       serializedVersion: 2
-      Hash: aea064e6f4a58195de027fda2eef8999
+      Hash: 747284d692f6c45bae4955ed655ed04c
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
     className: TextMeshPro
@@ -557,12 +530,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: Mask
-  - hash:
-      serializedVersion: 2
-      Hash: 369457075e1effeb316a8dc0a624cbe1
-    assemblyName: Assembly-CSharp
-    namespaceName: Serenegiant.UVC
-    className: SettingsButton
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -1117,12 +1084,6 @@ ScriptsOnlyBuild:
     className: ScrollRect
   - hash:
       serializedVersion: 2
-      Hash: dd0e31651534e73ce3251fbb81fef7f0
-    assemblyName: Assembly-CSharp
-    namespaceName: Serenegiant.UVC
-    className: SettingsPanel
-  - hash:
-      serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -1229,7 +1190,31 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: RotationScript
+  - hash:
+      serializedVersion: 2
+      Hash: 9b9a2d57fa0a66a66195adfbb7df3caf
+    assemblyName: Assembly-CSharp
+    namespaceName: Serenegiant.UVC
+    className: SettingsPanel
+  - hash:
+      serializedVersion: 2
+      Hash: 369457075e1effeb316a8dc0a624cbe1
+    assemblyName: Assembly-CSharp
+    namespaceName: Serenegiant.UVC
+    className: SettingsButton
+  - hash:
+      serializedVersion: 2
+      Hash: 67798f8219c429b10848f1f4c08003ed
+    assemblyName: Assembly-CSharp
+    namespaceName: Serenegiant.UVC
+    className: RotateCamera
   platform: 13
   scenePathNames:
-  - Assets/Scenes/SampleScene.unity
-  playerPath: /home/fernanda/a.apk
+  - Assets/UVC4UnityAndroidPlugin/Samples/Scenes/UVC2Dx2Scene.unity
+  playerPath: C:/Users/Victor/Documents/Misto-Quente/MistoQuente/Builds/v0.apk

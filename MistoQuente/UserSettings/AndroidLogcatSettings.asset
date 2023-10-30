@@ -1,9 +1,9 @@
 {
-    "m_SelectedDeviceId": "RX2T3019RQN",
+    "m_SelectedDeviceId": "192.168.15.47:45137",
     "m_SelectedPackage": {
-        "deviceId": "RX2T3019RQN",
-        "name": "com.serenegiant.mistoquente",
-        "processId": 11180,
+        "deviceId": "",
+        "name": "",
+        "processId": 0,
         "exited": false
     },
     "m_SelectedPriority": 1,
@@ -54,6 +54,12 @@
             "deviceId": "RX2T3019RQN",
             "name": "com.serenegiant.mistoquente",
             "processId": 11180,
+            "exited": false
+        },
+        {
+            "deviceId": "192.168.15.47:45137",
+            "name": "com.serenegiant.mistoquente",
+            "processId": 22373,
             "exited": false
         }
     ],
@@ -108,7 +114,7 @@
         "Behavior": 0
     },
     "m_FilterOptions": {
-        "m_Filter": "renderizando",
+        "m_Filter": "",
         "m_UseRegularExpressions": false,
         "m_MatchCase": false
     },

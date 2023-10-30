@@ -10,12 +10,14 @@ namespace Serenegiant.UVC
     {
         [SerializeField] Button buttonRotationLeft;
         [SerializeField] Button buttonRotationRight;
+        [SerializeField] Button mirrorViewsButton;
 
         [SerializeField] RectTransform leftView;
         [SerializeField] RectTransform rightView;
         [SerializeField] Slider viewDistance;
         [SerializeField] float offSetSlider;
         [SerializeField] float maxValueSlider;
+        
 
         float rotationAngleLeftView = 0f;
         float rotationAngleRightView = 0f;
@@ -23,10 +25,8 @@ namespace Serenegiant.UVC
         {
             buttonRotationLeft.onClick.AddListener(RotateLeft);
             buttonRotationRight.onClick.AddListener(RotateRight);
+            mirrorViewsButton.onClick.AddListener(MirrorView);
             viewDistance.onValueChanged.AddListener(DistanceView);
-            //viewDistance.minValue = minValueSlider;
-            //viewDistance.maxValue = maxValueSlider;
-
         }
         void RotateLeft()
         {
@@ -58,9 +58,15 @@ namespace Serenegiant.UVC
 
             leftView.anchoredPosition = new Vector2(distance, 0);
             rightView.anchoredPosition = new Vector2(-distance, 0);
-
-            Debug.Log($"{Screen.width}");
         }
 
+        void MirrorView()
+        {
+            Vector3 leftViewAux = leftView.transform.position;
+            Vector3 rightViewAux = rightView.transform.position;
+
+            leftView.transform.position = rightViewAux;
+            rightView.transform.position = leftViewAux;
+        }
     }
 }

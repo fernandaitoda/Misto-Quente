@@ -5,144 +5,144 @@
 5
 6    <uses-sdk
 7        android:minSdkVersion="22"
-7-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml
+7-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml
 8        android:targetSdkVersion="32" />
-8-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml
+8-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml
 9
 10    <uses-permission android:name="android.permission.CAMERA" />
-10-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:3:3-63
-10-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:3:20-60
+10-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:3:3-63
+10-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:3:20-60
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:4:3-65
-11-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:4:20-62
+11-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:4:3-65
+11-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:4:20-62
 12
 13    <uses-feature android:glEsVersion="0x00030000" />
-13-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:5:3-52
-13-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:5:17-49
+13-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:5:3-52
+13-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:5:17-49
 14    <uses-feature
-14-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:6:3-83
+14-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:6:3-83
 15        android:name="android.hardware.camera"
-15-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:6:17-55
+15-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:6:17-55
 16        android:required="false" />
-16-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:6:56-80
+16-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:6:56-80
 17    <uses-feature
-17-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:7:3-93
+17-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:7:3-93
 18        android:name="android.hardware.camera.autofocus"
-18-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:7:17-65
+18-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:7:17-65
 19        android:required="false" />
-19-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:7:66-90
+19-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:7:66-90
 20    <uses-feature
-20-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:8:3-89
+20-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:8:3-89
 21        android:name="android.hardware.camera.front"
-21-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:8:17-61
+21-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:8:17-61
 22        android:required="false" />
-22-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:8:62-86
+22-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:8:62-86
 23    <uses-feature
-23-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:9:3-88
+23-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:9:3-88
 24        android:name="android.hardware.touchscreen"
-24-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:9:17-60
+24-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:9:17-60
 25        android:required="false" />
-25-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:9:61-85
+25-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:9:61-85
 26    <uses-feature
-26-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:10:3-99
+26-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:10:3-99
 27        android:name="android.hardware.touchscreen.multitouch"
-27-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:10:17-71
+27-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:10:17-71
 28        android:required="false" />
-28-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:10:72-96
+28-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:10:72-96
 29    <uses-feature
-29-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:11:3-108
+29-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:11:3-108
 30        android:name="android.hardware.touchscreen.multitouch.distinct"
-30-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:11:17-80
+30-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:11:17-80
 31        android:required="false" />
-31-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:11:81-105
+31-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:11:81-105
 32
 33    <application android:extractNativeLibs="true" >
-33-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:12:3-28:17
-33-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:12:16-48
+33-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:12:3-28:17
+33-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:12:16-48
 34        <meta-data
-34-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:13:5-69
+34-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:13:5-69
 35            android:name="unity.splash-mode"
-35-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:13:16-48
+35-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:13:16-48
 36            android:value="0" />
-36-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:13:49-66
+36-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:13:49-66
 37        <meta-data
-37-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:14:5-74
+37-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:14:5-74
 38            android:name="unity.splash-enable"
-38-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:14:16-50
+38-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:14:16-50
 39            android:value="True" />
-39-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:14:51-71
+39-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:14:51-71
 40        <meta-data
-40-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:15:5-78
+40-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:15:5-78
 41            android:name="unity.launch-fullscreen"
-41-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:15:16-54
+41-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:15:16-54
 42            android:value="True" />
-42-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:15:55-75
+42-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:15:55-75
 43        <meta-data
-43-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:16:5-84
+43-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:16:5-84
 44            android:name="unity.allow-resizable-window"
-44-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:16:16-59
+44-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:16:16-59
 45            android:value="False" />
-45-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:16:60-81
+45-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:16:60-81
 46        <meta-data
-46-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:17:5-81
+46-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:17:5-81
 47            android:name="notch.config"
-47-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:17:16-43
+47-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:17:16-43
 48            android:value="portrait|landscape" />
-48-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:17:44-78
+48-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:17:44-78
 49        <meta-data
-49-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:18:5-84
+49-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:18:5-84
 50            android:name="unity.auto-report-fully-drawn"
-50-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:18:16-60
+50-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:18:16-60
 51            android:value="true" />
-51-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:18:61-81
+51-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:18:61-81
 52
 53        <activity
-53-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:19:5-102
+53-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:19:5-102
 54            android:name="com.serenegiant.mistoquente.UsbPermissionActivity"
-54-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:19:15-79
+54-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:19:15-79
 55            tools:node="remove" />
-55-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:19:80-99
+55-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:19:80-99
 56        <activity
-56-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:20:5-27:16
+56-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:20:5-27:16
 57            android:name="com.unity3d.player.UnityPlayerActivity"
-57-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:20:15-68
+57-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:20:15-68
 58            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
-58-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:20:180-361
+58-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:20:180-361
 59            android:exported="true"
-59-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:20:433-456
+59-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:20:433-456
 60            android:hardwareAccelerated="false"
-60-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:20:397-432
+60-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:20:397-432
 61            android:launchMode="singleTask"
-61-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:20:148-179
+61-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:20:148-179
 62            android:resizeableActivity="false"
-62-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:20:362-396
+62-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:20:362-396
 63            android:screenOrientation="fullUser"
-63-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:20:111-147
+63-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:20:111-147
 64            android:theme="@style/UnityThemeSelector" >
-64-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:20:69-110
+64-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:20:69-110
 65            <intent-filter>
-65-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:21:7-24:23
+65-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:21:7-24:23
 66                <category android:name="android.intent.category.LAUNCHER" />
-66-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:22:9-69
-66-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:22:19-66
+66-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:22:9-69
+66-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:22:19-66
 67
 68                <action android:name="android.intent.action.MAIN" />
-68-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:23:9-61
-68-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:23:17-58
+68-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:23:9-61
+68-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:23:17-58
 69            </intent-filter>
 70
 71            <meta-data
-71-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:25:7-82
+71-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:25:7-82
 72                android:name="unityplayer.UnityActivity"
-72-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:25:18-58
+72-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:25:18-58
 73                android:value="true" />
-73-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:25:59-79
+73-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:25:59-79
 74            <meta-data
-74-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:26:7-70
+74-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:26:7-70
 75                android:name="notch_support"
-75-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:26:18-46
+75-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:26:18-46
 76                android:value="true" />
-76-->/home/fernanda/Downloads/MistoQuente/Library/PramData/AndroidApplicationController/Cache/com.serenegiant.mistoquente/gradle-project/unityLibrary/src/main/AndroidManifest.xml:26:47-67
+76-->C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PramData\AndroidApplicationController\Cache\com.serenegiant.mistoquente\gradle-project\unityLibrary\src\main\AndroidManifest.xml:26:47-67
 77        </activity>
 78    </application>
 79

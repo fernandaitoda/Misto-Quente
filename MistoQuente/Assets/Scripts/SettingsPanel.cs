@@ -12,17 +12,21 @@ namespace Serenegiant.UVC
         [SerializeField] Button buttonRotationRight;
         [SerializeField] Button mirrorViewsButton;
 
-        [SerializeField] RectTransform leftView;
-        [SerializeField] RectTransform rightView;
+        [SerializeField] RectTransform redView;
+        [SerializeField] RectTransform blueView;
         [SerializeField] Slider viewDistance;
         [SerializeField] float offSetSlider;
         [SerializeField] float maxValueSlider;
         
+        RectTransform rightView;
+        RectTransform leftView;
 
         float rotationAngleLeftView = 0f;
         float rotationAngleRightView = 0f;
         private void OnEnable()
         {
+            rightView = blueView;
+            leftView = redView;
             buttonRotationLeft.onClick.AddListener(RotateLeft);
             buttonRotationRight.onClick.AddListener(RotateRight);
             mirrorViewsButton.onClick.AddListener(MirrorView);
@@ -56,17 +60,40 @@ namespace Serenegiant.UVC
         {
             distance = viewDistance.value;
 
-            leftView.anchoredPosition = new Vector2(distance, 0);
-            rightView.anchoredPosition = new Vector2(-distance, 0);
+            // max distance value = 50 and min = -70
+            if (leftView.anchoredPosition.x <= 50 && leftView.anchoredPosition.x >= -70) 
+            {
+                leftView.anchoredPosition = new Vector2(+ distance, 0);
+                rightView.anchoredPosition = new Vector2(- distance, 0);
+            }
+            else 
+            {
+                leftView.anchoredPosition = new Vector2( - 960 + distance, 0);
+                rightView.anchoredPosition = new Vector2( 960 - distance, 0);
+            }
         }
 
         void MirrorView()
         {
-            Vector3 leftViewAux = leftView.transform.position;
-            Vector3 rightViewAux = rightView.transform.position;
+            // Flip the positions of the left and right views
+            Vector3 oldLeftPosition = leftView.transform.position;
+            Vector3 oldRightPosition = rightView.transform.position;
 
-            leftView.transform.position = rightViewAux;
-            rightView.transform.position = leftViewAux;
+            leftView.transform.position = oldRightPosition;
+            rightView.transform.position = oldLeftPosition;
+
+            Debug.Log("after change");
+
+            // Swap the RectTransform references
+            if (rightView == blueView)
+            {
+            rightView = redView;
+            leftView = blueView;
+            }
+            else {
+            rightView = blueView;
+            leftView = redView;
+            }
         }
     }
 }

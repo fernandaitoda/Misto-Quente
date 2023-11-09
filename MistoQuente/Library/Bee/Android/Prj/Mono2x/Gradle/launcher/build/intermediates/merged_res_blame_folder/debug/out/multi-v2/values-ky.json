@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Victor\\Documents\\Misto-Quente\\MistoQuente\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ky\\values-ky.xml",
+            "outputFile": "/home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ky/values-ky.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Victor\\.gradle\\caches\\transforms-3\\88262e2acf03b53dbbc7f81bfce1731f\\transformed\\core-1.6.0\\res\\values-ky\\values-ky.xml",
+                    "source": "/home/fernanda/.gradle/caches/transforms-3/88262e2acf03b53dbbc7f81bfce1731f/transformed/core-1.6.0/res/values-ky/values-ky.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

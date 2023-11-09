@@ -24,10 +24,10 @@
     {
       "Annotation": "BuildPlayerDataGenerator Library/BuildPlayerData/Editor/TypeDb-All.json",
       "DisplayName": "BuildPlayerDataGenerator TypeDb-All",
-      "Action": "\"C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data\\Tools\\netcorerun\\netcorerun.exe\" \"C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPlayerDataGenerator/BuildPlayerDataGenerator.exe\" -a=\"C:\\Users\\Victor\\Documents\\Misto-Quente\\MistoQuente\\Assets\\Packages\\Microsoft.Bcl.AsyncInterfaces.5.0.0\\lib\\netstandard2.0\\Microsoft.Bcl.AsyncInterfaces.dll\" -a=\"C:\\Users\\Victor\\Documents\\Misto-Quente\\MistoQuente\\Assets\\Packages\\System.Runtime.CompilerServices.Unsafe.5.0.0\\lib\\netstandard2.0\\System.Runtime.CompilerServices.Unsafe.dll\" -a=\"C:\\Users\\Victor\\Documents\\Misto-Quente\\MistoQuente\\Assets\\Packages\\System.Text.Encodings.Web.5.0.1\\lib\\netstandard2.0\\System.Text.Encodings.Web.dll\" -a=\"C:\\Users\\Victor\\Documents\\Misto-Quente\\MistoQuente\\Assets\\Packages\\System.Text.Json.5.0.2\\lib\\netstandard2.0\\System.Text.Json.dll\" -a=\"C:\\Users\\Victor\\Documents\\Misto-Quente\\MistoQuente\\Library\\ScriptAssemblies\\Assembly-CSharp.dll\" -a=\"C:\\Users\\Victor\\Documents\\Misto-Quente\\MistoQuente\\Library\\ScriptAssemblies\\Unity.TextMeshPro.dll\" -a=\"C:\\Users\\Victor\\Documents\\Misto-Quente\\MistoQuente\\Library\\ScriptAssemblies\\Unity.Timeline.dll\" -a=\"C:\\Users\\Victor\\Documents\\Misto-Quente\\MistoQuente\\Library\\ScriptAssemblies\\Unity.VisualScripting.Core.dll\" -a=\"C:\\Users\\Victor\\Documents\\Misto-Quente\\MistoQuente\\Library\\ScriptAssemblies\\Unity.VisualScripting.Flow.dll\" -a=\"C:\\Users\\Victor\\Documents\\Misto-Quente\\MistoQuente\\Library\\ScriptAssemblies\\Unity.VisualScripting.State.dll\" -a=\"C:\\Users\\Victor\\Documents\\Misto-Quente\\MistoQuente\\Library\\ScriptAssemblies\\UnityEngine.TestRunner.dll\" -a=\"C:\\Users\\Victor\\Documents\\Misto-Quente\\MistoQuente\\Library\\ScriptAssemblies\\UnityEngine.UI.dll\" -a=\"C:\\Users\\Victor\\Documents\\Misto-Quente\\MistoQuente\\Library\\PackageCache\\com.unity.ext.nunit@1.0.6\\net35\\unity-custom\\nunit.framework.dll\" -a=\"C:\\Users\\Victor\\Documents\\Misto-Quente\\MistoQuente\\Library\\PackageCache\\com.unity.testtools.codecoverage@1.2.4\\lib\\ReportGenerator\\ReportGeneratorMerged.dll\" -a=\"C:\\Users\\Victor\\Documents\\Misto-Quente\\MistoQuente\\Library\\PackageCache\\com.unity.visualscripting@1.9.0\\Runtime\\VisualScripting.Flow\\Dependencies\\NCalc\\Unity.VisualScripting.Antlr3.Runtime.dll\" -s=\"C:\\Users\\Victor\\Documents\\Misto-Quente\\MistoQuente\\Assets\\Packages\\Microsoft.Bcl.AsyncInterfaces.5.0.0\\lib\\netstandard2.0\" -s=\"C:\\Users\\Victor\\Documents\\Misto-Quente\\MistoQuente\\Assets\\Packages\\System.Runtime.CompilerServices.Unsafe.5.0.0\\lib\\netstandard2.0\" -s=\"C:\\Users\\Victor\\Documents\\Misto-Quente\\MistoQuente\\Assets\\Packages\\System.Text.Encodings.Web.5.0.1\\lib\\netstandard2.0\" -s=\"C:\\Users\\Victor\\Documents\\Misto-Quente\\MistoQuente\\Assets\\Packages\\System.Text.Json.5.0.2\\lib\\netstandard2.0\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\Managed\\UnityEngine\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\NetStandard\\compat\\2.1.0\\shims\\netfx\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\NetStandard\\compat\\2.1.0\\shims\\netstandard\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\NetStandard\\Extensions\\2.0.0\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\NetStandard\\ref\\2.1.0\" -s=\"C:\\Users\\Victor\\Documents\\Misto-Quente\\MistoQuente\\Library\\ScriptAssemblies\" -s=\"C:\\Users\\Victor\\Documents\\Misto-Quente\\MistoQuente\\Library\\PackageCache\\com.unity.ext.nunit@1.0.6\\net35\\unity-custom\" -s=\"C:\\Users\\Victor\\Documents\\Misto-Quente\\MistoQuente\\Library\\PackageCache\\com.unity.testtools.codecoverage@1.2.4\\lib\\ReportGenerator\" -s=\"C:\\Users\\Victor\\Documents\\Misto-Quente\\MistoQuente\\Library\\PackageCache\\com.unity.visualscripting@1.9.0\\Runtime\\VisualScripting.Flow\\Dependencies\\NCalc\" -o=\"Library/BuildPlayerData/Editor\" -rn=\"\" -tn=\"TypeDb-All.json\"",
+      "Action": "\"/home/fernanda/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/fernanda/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPlayerDataGenerator/BuildPlayerDataGenerator.exe\" -a=\"/home/fernanda/Git/Misto-Quente/MistoQuente/Assets/Packages/Microsoft.Bcl.AsyncInterfaces.5.0.0/lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll\" -a=\"/home/fernanda/Git/Misto-Quente/MistoQuente/Assets/Packages/System.Runtime.CompilerServices.Unsafe.5.0.0/lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll\" -a=\"/home/fernanda/Git/Misto-Quente/MistoQuente/Assets/Packages/System.Text.Encodings.Web.5.0.1/lib/netstandard2.0/System.Text.Encodings.Web.dll\" -a=\"/home/fernanda/Git/Misto-Quente/MistoQuente/Assets/Packages/System.Text.Json.5.0.2/lib/netstandard2.0/System.Text.Json.dll\" -a=\"/home/fernanda/Git/Misto-Quente/MistoQuente/Library/ScriptAssemblies/Assembly-CSharp.dll\" -a=\"/home/fernanda/Git/Misto-Quente/MistoQuente/Library/ScriptAssemblies/Unity.TextMeshPro.dll\" -a=\"/home/fernanda/Git/Misto-Quente/MistoQuente/Library/ScriptAssemblies/Unity.Timeline.dll\" -a=\"/home/fernanda/Git/Misto-Quente/MistoQuente/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll\" -a=\"/home/fernanda/Git/Misto-Quente/MistoQuente/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll\" -a=\"/home/fernanda/Git/Misto-Quente/MistoQuente/Library/ScriptAssemblies/Unity.VisualScripting.State.dll\" -a=\"/home/fernanda/Git/Misto-Quente/MistoQuente/Library/ScriptAssemblies/UnityEngine.TestRunner.dll\" -a=\"/home/fernanda/Git/Misto-Quente/MistoQuente/Library/ScriptAssemblies/UnityEngine.UI.dll\" -a=\"/home/fernanda/Git/Misto-Quente/MistoQuente/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll\" -a=\"/home/fernanda/Git/Misto-Quente/MistoQuente/Library/PackageCache/com.unity.testtools.codecoverage@1.2.4/lib/ReportGenerator/ReportGeneratorMerged.dll\" -a=\"/home/fernanda/Git/Misto-Quente/MistoQuente/Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll\" -s=\"/home/fernanda/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Managed/UnityEngine\" -s=\"/home/fernanda/Unity/Hub/Editor/2022.3.9f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx\" -s=\"/home/fernanda/Unity/Hub/Editor/2022.3.9f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard\" -s=\"/home/fernanda/Unity/Hub/Editor/2022.3.9f1/Editor/Data/NetStandard/Extensions/2.0.0\" -s=\"/home/fernanda/Unity/Hub/Editor/2022.3.9f1/Editor/Data/NetStandard/ref/2.1.0\" -s=\"/home/fernanda/Git/Misto-Quente/MistoQuente/Assets/Packages/Microsoft.Bcl.AsyncInterfaces.5.0.0/lib/netstandard2.0\" -s=\"/home/fernanda/Git/Misto-Quente/MistoQuente/Assets/Packages/System.Runtime.CompilerServices.Unsafe.5.0.0/lib/netstandard2.0\" -s=\"/home/fernanda/Git/Misto-Quente/MistoQuente/Assets/Packages/System.Text.Encodings.Web.5.0.1/lib/netstandard2.0\" -s=\"/home/fernanda/Git/Misto-Quente/MistoQuente/Assets/Packages/System.Text.Json.5.0.2/lib/netstandard2.0\" -s=\"/home/fernanda/Git/Misto-Quente/MistoQuente/Library/ScriptAssemblies\" -s=\"/home/fernanda/Git/Misto-Quente/MistoQuente/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom\" -s=\"/home/fernanda/Git/Misto-Quente/MistoQuente/Library/PackageCache/com.unity.testtools.codecoverage@1.2.4/lib/ReportGenerator\" -s=\"/home/fernanda/Git/Misto-Quente/MistoQuente/Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Dependencies/NCalc\" -o=\"Library/BuildPlayerData/Editor\" -rn=\"\" -tn=\"TypeDb-All.json\"",
       "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/netcorerun/netcorerun.exe",
-        "C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPlayerDataGenerator/BuildPlayerDataGenerator.exe",
+        "/home/fernanda/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/netcorerun/netcorerun",
+        "/home/fernanda/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPlayerDataGenerator/BuildPlayerDataGenerator.exe",
         "Assets/Packages/Microsoft.Bcl.AsyncInterfaces.5.0.0/lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll",
         "Assets/Packages/System.Runtime.CompilerServices.Unsafe.5.0.0/lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
         "Assets/Packages/System.Text.Encodings.Web.5.0.1/lib/netstandard2.0/System.Text.Encodings.Web.dll",
@@ -66,118 +66,109 @@
   ],
   "FileSignatures": [
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/Bee.BuildTools.dll"
+      "File": "/home/fernanda/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/Bee.BuildTools.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/Bee.Core.dll"
+      "File": "/home/fernanda/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/Bee.CSharpSupport.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/Bee.CSharpSupport.dll"
+      "File": "/home/fernanda/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/Bee.Core.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/Bee.DotNet.dll"
+      "File": "/home/fernanda/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/Bee.DotNet.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/Bee.NativeProgramSupport.dll"
+      "File": "/home/fernanda/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/Bee.NativeProgramSupport.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/Bee.Stevedore.Program.exe"
+      "File": "/home/fernanda/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/Bee.Stevedore.Program.exe"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/Bee.TinyProfiler2.dll"
+      "File": "/home/fernanda/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/Bee.TinyProfiler2.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/Bee.Toolchain.GNU.dll"
+      "File": "/home/fernanda/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/Bee.Toolchain.GNU.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/Bee.Toolchain.LLVM.dll"
+      "File": "/home/fernanda/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/Bee.Toolchain.LLVM.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/Bee.Toolchain.VisualStudio.dll"
+      "File": "/home/fernanda/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/Bee.Toolchain.VisualStudio.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/Bee.Toolchain.Xcode.dll"
+      "File": "/home/fernanda/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/Bee.Toolchain.Xcode.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/Bee.Tools.dll"
+      "File": "/home/fernanda/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/Bee.Tools.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/Bee.TundraBackend.dll"
+      "File": "/home/fernanda/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/Bee.TundraBackend.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/Bee.VisualStudioSolution.dll"
+      "File": "/home/fernanda/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/Bee.VisualStudioSolution.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/BeeBuildProgramCommon.Data.dll"
+      "File": "/home/fernanda/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/BeeBuildProgramCommon.Data.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/BeeBuildProgramCommon.dll"
+      "File": "/home/fernanda/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/BeeBuildProgramCommon.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/BeeLocalCacheTool.exe"
+      "File": "/home/fernanda/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/Newtonsoft.Json.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/Newtonsoft.Json.dll"
+      "File": "/home/fernanda/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/NiceIO.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/NiceIO.dll"
+      "File": "/home/fernanda/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/PlayerBuildProgramLibrary.Data.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/PlayerBuildProgramLibrary.Data.dll"
+      "File": "/home/fernanda/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/PlayerBuildProgramLibrary.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/PlayerBuildProgramLibrary.dll"
+      "File": "/home/fernanda/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/ScriptCompilationBuildProgram.Data.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/ScriptCompilationBuildProgram.Data.dll"
+      "File": "/home/fernanda/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/ScriptCompilationBuildProgram.exe"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/ScriptCompilationBuildProgram.exe"
+      "File": "/home/fernanda/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/SharpYaml.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/SharpYaml.dll"
+      "File": "/home/fernanda/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/Unity.Api.Attributes.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/Unity.Api.Attributes.dll"
+      "File": "/home/fernanda/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/Unity.Cecil.Mdb.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/Unity.Cecil.dll"
+      "File": "/home/fernanda/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/Unity.Cecil.Pdb.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/Unity.Cecil.Mdb.dll"
+      "File": "/home/fernanda/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/Unity.Cecil.Rocks.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/Unity.Cecil.Pdb.dll"
+      "File": "/home/fernanda/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/Unity.Cecil.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/Unity.Cecil.Rocks.dll"
+      "File": "/home/fernanda/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/Unity.IL2CPP.Api.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/Unity.IL2CPP.Api.dll"
+      "File": "/home/fernanda/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/Unity.IL2CPP.Bee.BuildLogic.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/Unity.IL2CPP.Bee.BuildLogic.dll"
+      "File": "/home/fernanda/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/Unity.IL2CPP.Bee.IL2CPPExeCompileCppBuildProgram.Data.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/Unity.IL2CPP.Bee.IL2CPPExeCompileCppBuildProgram.Data.dll"
+      "File": "/home/fernanda/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/Unity.Linker.Api.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/Unity.Linker.Api.dll"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/Unity.Options.dll"
+      "File": "/home/fernanda/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline/Unity.Options.dll"
     },
     {
       "File": "Library/Bee/1300b0aESkipCompile-inputdata.json"
     }
   ],
   "StatSignatures": [
-    {
-      "File": "Assets/csc.rsp"
-    },
-    {
-      "File": "Assets/mcs.rsp"
-    },
     {
       "File": "Assets/Packages/Microsoft.Bcl.AsyncInterfaces.5.0.0/lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll"
     },
@@ -189,6 +180,12 @@
     },
     {
       "File": "Assets/Packages/System.Text.Json.5.0.2/lib/netstandard2.0/System.Text.Json.dll"
+    },
+    {
+      "File": "Assets/csc.rsp"
+    },
+    {
+      "File": "Assets/mcs.rsp"
     },
     {
       "File": "Library/Bee/1300b0aESkipCompile-inputdata.json"
@@ -229,7 +226,7 @@
   ],
   "GlobSignatures": [
     {
-      "Path": "C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline"
+      "Path": "/home/fernanda/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/BuildPipeline"
     }
   ],
   "ContentDigestExtensions": [
@@ -259,6 +256,6 @@
   "SharedResources": [],
   "Scanners": [],
   "Identifier": "Library/Bee/1300b0aESkipCompile.dag.json",
-  "PayloadsFile": "C:/Users/Victor/Documents/Misto-Quente/MistoQuente/Library/Bee/1300b0aESkipCompile.dag.payloads",
+  "PayloadsFile": "/home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/1300b0aESkipCompile.dag.payloads",
   "RelativePathToRoot": "../.."
 }

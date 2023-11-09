@@ -1,0 +1,254 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/AndroidManifest.xml:2:1-5:12
+INJECTED from /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/AndroidManifest.xml:2:1-5:12
+INJECTED from /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/AndroidManifest.xml:2:1-5:12
+INJECTED from /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/AndroidManifest.xml:2:1-5:12
+MERGED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-79:12
+MERGED from [:uvc-plugin-8.28.3:] /home/fernanda/.gradle/caches/transforms-3/d384b2bd81862d4416a1f417a55f4f15/transformed/uvc-plugin-8.28.3/AndroidManifest.xml:2:1-40:12
+MERGED from [:aandusb-8.28.3:] /home/fernanda/.gradle/caches/transforms-3/4334c05e75ab38590655f71c3f74c58c/transformed/aandusb-8.28.3/AndroidManifest.xml:2:1-11:12
+MERGED from [:core-1.6.0:] /home/fernanda/.gradle/caches/transforms-3/88262e2acf03b53dbbc7f81bfce1731f/transformed/core-1.6.0/AndroidManifest.xml:17:1-26:12
+MERGED from [:android-utils-unity-0.2.0:] /home/fernanda/.gradle/caches/transforms-3/227d70780aa970fc6a1bd1e77ad35f84/transformed/android-utils-unity-0.2.0/AndroidManifest.xml:2:1-9:12
+MERGED from [:common-8.1.3:] /home/fernanda/.gradle/caches/transforms-3/590f593dd6f9d3a68602022810157efd/transformed/common-8.1.3/AndroidManifest.xml:2:1-9:12
+INJECTED from /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/AndroidManifest.xml:2:1-5:12
+INJECTED from /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/AndroidManifest.xml:2:1-5:12
+INJECTED from /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/AndroidManifest.xml:2:1-5:12
+	package
+		ADDED from /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/AndroidManifest.xml:2:70-107
+		INJECTED from /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/AndroidManifest.xml
+		INJECTED from /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/AndroidManifest.xml
+		ADDED from /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/AndroidManifest.xml:2:1-5:12
+		INJECTED from /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/AndroidManifest.xml:2:108-154
+	android:versionCode
+		INJECTED from /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/AndroidManifest.xml
+		ADDED from /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/AndroidManifest.xml:2:1-5:12
+		INJECTED from /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/AndroidManifest.xml:2:11-69
+	android:installLocation
+		ADDED from /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/AndroidManifest.xml:2:155-195
+application
+ADDED from /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/AndroidManifest.xml:3:3-83
+MERGED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:32:5-77:19
+MERGED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:32:5-77:19
+MERGED from [:uvc-plugin-8.28.3:] /home/fernanda/.gradle/caches/transforms-3/d384b2bd81862d4416a1f417a55f4f15/transformed/uvc-plugin-8.28.3/AndroidManifest.xml:25:5-38:19
+MERGED from [:uvc-plugin-8.28.3:] /home/fernanda/.gradle/caches/transforms-3/d384b2bd81862d4416a1f417a55f4f15/transformed/uvc-plugin-8.28.3/AndroidManifest.xml:25:5-38:19
+MERGED from [:core-1.6.0:] /home/fernanda/.gradle/caches/transforms-3/88262e2acf03b53dbbc7f81bfce1731f/transformed/core-1.6.0/AndroidManifest.xml:24:5-89
+MERGED from [:core-1.6.0:] /home/fernanda/.gradle/caches/transforms-3/88262e2acf03b53dbbc7f81bfce1731f/transformed/core-1.6.0/AndroidManifest.xml:24:5-89
+	android:extractNativeLibs
+		ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:32:18-50
+	android:appComponentFactory
+		ADDED from [:core-1.6.0:] /home/fernanda/.gradle/caches/transforms-3/88262e2acf03b53dbbc7f81bfce1731f/transformed/core-1.6.0/AndroidManifest.xml:24:18-86
+	android:label
+		ADDED from /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/AndroidManifest.xml:3:16-48
+	android:icon
+		ADDED from /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/AndroidManifest.xml:3:49-80
+supports-screens
+ADDED from /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/AndroidManifest.xml:4:3-163
+	android:largeScreens
+		ADDED from /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/AndroidManifest.xml:4:78-105
+	android:smallScreens
+		ADDED from /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/AndroidManifest.xml:4:21-48
+	android:normalScreens
+		ADDED from /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/AndroidManifest.xml:4:49-77
+	android:xlargeScreens
+		ADDED from /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/AndroidManifest.xml:4:106-134
+	android:anyDensity
+		ADDED from /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/AndroidManifest.xml:4:135-160
+uses-sdk
+INJECTED from /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/AndroidManifest.xml
+INJECTED from /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/AndroidManifest.xml
+MERGED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:6:5-8:41
+MERGED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:6:5-8:41
+MERGED from [:uvc-plugin-8.28.3:] /home/fernanda/.gradle/caches/transforms-3/d384b2bd81862d4416a1f417a55f4f15/transformed/uvc-plugin-8.28.3/AndroidManifest.xml:5:5-7:41
+MERGED from [:uvc-plugin-8.28.3:] /home/fernanda/.gradle/caches/transforms-3/d384b2bd81862d4416a1f417a55f4f15/transformed/uvc-plugin-8.28.3/AndroidManifest.xml:5:5-7:41
+MERGED from [:aandusb-8.28.3:] /home/fernanda/.gradle/caches/transforms-3/4334c05e75ab38590655f71c3f74c58c/transformed/aandusb-8.28.3/AndroidManifest.xml:7:5-9:41
+MERGED from [:aandusb-8.28.3:] /home/fernanda/.gradle/caches/transforms-3/4334c05e75ab38590655f71c3f74c58c/transformed/aandusb-8.28.3/AndroidManifest.xml:7:5-9:41
+MERGED from [:core-1.6.0:] /home/fernanda/.gradle/caches/transforms-3/88262e2acf03b53dbbc7f81bfce1731f/transformed/core-1.6.0/AndroidManifest.xml:20:5-22:41
+MERGED from [:core-1.6.0:] /home/fernanda/.gradle/caches/transforms-3/88262e2acf03b53dbbc7f81bfce1731f/transformed/core-1.6.0/AndroidManifest.xml:20:5-22:41
+MERGED from [:android-utils-unity-0.2.0:] /home/fernanda/.gradle/caches/transforms-3/227d70780aa970fc6a1bd1e77ad35f84/transformed/android-utils-unity-0.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [:android-utils-unity-0.2.0:] /home/fernanda/.gradle/caches/transforms-3/227d70780aa970fc6a1bd1e77ad35f84/transformed/android-utils-unity-0.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [:common-8.1.3:] /home/fernanda/.gradle/caches/transforms-3/590f593dd6f9d3a68602022810157efd/transformed/common-8.1.3/AndroidManifest.xml:5:5-7:41
+MERGED from [:common-8.1.3:] /home/fernanda/.gradle/caches/transforms-3/590f593dd6f9d3a68602022810157efd/transformed/common-8.1.3/AndroidManifest.xml:5:5-7:41
+INJECTED from /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/AndroidManifest.xml
+INJECTED from /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/AndroidManifest.xml
+		ADDED from /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/AndroidManifest.xml
+		INJECTED from /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/AndroidManifest.xml
+		ADDED from /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/AndroidManifest.xml
+		INJECTED from /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/AndroidManifest.xml
+uses-permission#android.permission.CAMERA
+ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:10:5-65
+MERGED from [:uvc-plugin-8.28.3:] /home/fernanda/.gradle/caches/transforms-3/d384b2bd81862d4416a1f417a55f4f15/transformed/uvc-plugin-8.28.3/AndroidManifest.xml:20:5-65
+MERGED from [:uvc-plugin-8.28.3:] /home/fernanda/.gradle/caches/transforms-3/d384b2bd81862d4416a1f417a55f4f15/transformed/uvc-plugin-8.28.3/AndroidManifest.xml:20:5-65
+	android:name
+		ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:10:22-62
+uses-feature#0x00030000
+ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:12:5-54
+	android:glEsVersion
+		ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:12:19-51
+uses-feature#android.hardware.camera
+ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:13:5-15:36
+MERGED from [:uvc-plugin-8.28.3:] /home/fernanda/.gradle/caches/transforms-3/d384b2bd81862d4416a1f417a55f4f15/transformed/uvc-plugin-8.28.3/AndroidManifest.xml:15:5-17:36
+MERGED from [:uvc-plugin-8.28.3:] /home/fernanda/.gradle/caches/transforms-3/d384b2bd81862d4416a1f417a55f4f15/transformed/uvc-plugin-8.28.3/AndroidManifest.xml:15:5-17:36
+	android:required
+		ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:15:9-33
+	android:name
+		ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:14:9-47
+uses-feature#android.hardware.camera.autofocus
+ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:16:5-18:36
+	android:required
+		ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:18:9-33
+	android:name
+		ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:17:9-57
+uses-feature#android.hardware.camera.front
+ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:19:5-21:36
+	android:required
+		ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:21:9-33
+	android:name
+		ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:20:9-53
+uses-feature#android.hardware.touchscreen
+ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:22:5-24:36
+	android:required
+		ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:24:9-33
+	android:name
+		ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:23:9-52
+uses-feature#android.hardware.touchscreen.multitouch
+ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:25:5-27:36
+	android:required
+		ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:27:9-33
+	android:name
+		ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:26:9-63
+uses-feature#android.hardware.touchscreen.multitouch.distinct
+ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:28:5-30:36
+	android:required
+		ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:30:9-33
+	android:name
+		ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:29:9-72
+meta-data#unity.splash-mode
+ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:33:9-35:33
+	android:value
+		ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:35:13-30
+	android:name
+		ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:34:13-45
+meta-data#unity.splash-enable
+ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:36:9-38:36
+	android:value
+		ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:38:13-33
+	android:name
+		ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:37:13-47
+meta-data#unity.launch-fullscreen
+ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:39:9-41:36
+	android:value
+		ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:41:13-33
+	android:name
+		ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:40:13-51
+meta-data#unity.allow-resizable-window
+ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:42:9-44:37
+	android:value
+		ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:44:13-34
+	android:name
+		ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:43:13-56
+meta-data#notch.config
+ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:45:9-47:50
+	android:value
+		ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:47:13-47
+	android:name
+		ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:46:13-40
+meta-data#unity.auto-report-fully-drawn
+ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:48:9-50:36
+	android:value
+		ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:50:13-33
+	android:name
+		ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:49:13-57
+activity#com.serenegiant.uvcplugin.UsbPermissionActivity
+ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:52:9-54:35
+	tools:node
+		ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:54:13-32
+	android:name
+		ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:53:13-75
+activity#com.unity3d.player.UnityPlayerActivity
+ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:55:9-76:20
+	android:screenOrientation
+		ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:62:13-49
+	android:launchMode
+		ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:60:13-44
+	android:hardwareAccelerated
+		ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:59:13-48
+	android:exported
+		ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:58:13-36
+	android:resizeableActivity
+		ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:61:13-47
+	android:configChanges
+		ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:57:13-194
+	android:theme
+		ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:63:13-54
+	android:name
+		ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:56:13-66
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:64:13-68:29
+category#android.intent.category.LAUNCHER
+ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:65:17-77
+	android:name
+		ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:65:27-74
+action#android.intent.action.MAIN
+ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:67:17-69
+	android:name
+		ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:67:25-66
+meta-data#unityplayer.UnityActivity
+ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:70:13-72:40
+	android:value
+		ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:72:17-37
+	android:name
+		ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:71:17-57
+meta-data#notch_support
+ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:73:13-75:40
+	android:value
+		ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:75:17-37
+	android:name
+		ADDED from [:unityLibrary] /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/merged_manifest/release/AndroidManifest.xml:74:17-45
+uses-feature#0x00020000
+ADDED from [:uvc-plugin-8.28.3:] /home/fernanda/.gradle/caches/transforms-3/d384b2bd81862d4416a1f417a55f4f15/transformed/uvc-plugin-8.28.3/AndroidManifest.xml:9:5-11:35
+REJECTED from /home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/AndroidManifest.xml:9:5-11:35
+	android:glEsVersion
+		ADDED from [:uvc-plugin-8.28.3:] /home/fernanda/.gradle/caches/transforms-3/d384b2bd81862d4416a1f417a55f4f15/transformed/uvc-plugin-8.28.3/AndroidManifest.xml:10:9-41
+	android:required
+		ADDED from [:uvc-plugin-8.28.3:] /home/fernanda/.gradle/caches/transforms-3/d384b2bd81862d4416a1f417a55f4f15/transformed/uvc-plugin-8.28.3/AndroidManifest.xml:11:9-32
+uses-feature#android.hardware.usb.host
+ADDED from [:uvc-plugin-8.28.3:] /home/fernanda/.gradle/caches/transforms-3/d384b2bd81862d4416a1f417a55f4f15/transformed/uvc-plugin-8.28.3/AndroidManifest.xml:12:5-14:35
+	android:required
+		ADDED from [:uvc-plugin-8.28.3:] /home/fernanda/.gradle/caches/transforms-3/d384b2bd81862d4416a1f417a55f4f15/transformed/uvc-plugin-8.28.3/AndroidManifest.xml:14:9-32
+	android:name
+		ADDED from [:uvc-plugin-8.28.3:] /home/fernanda/.gradle/caches/transforms-3/d384b2bd81862d4416a1f417a55f4f15/transformed/uvc-plugin-8.28.3/AndroidManifest.xml:13:9-49
+uses-permission#android.permission.REORDER_TASKS
+ADDED from [:uvc-plugin-8.28.3:] /home/fernanda/.gradle/caches/transforms-3/d384b2bd81862d4416a1f417a55f4f15/transformed/uvc-plugin-8.28.3/AndroidManifest.xml:23:5-72
+	android:name
+		ADDED from [:uvc-plugin-8.28.3:] /home/fernanda/.gradle/caches/transforms-3/d384b2bd81862d4416a1f417a55f4f15/transformed/uvc-plugin-8.28.3/AndroidManifest.xml:23:22-69
+activity#com.serenegiant.unity.uvcplugin.UsbPermissionActivity
+ADDED from [:uvc-plugin-8.28.3:] /home/fernanda/.gradle/caches/transforms-3/d384b2bd81862d4416a1f417a55f4f15/transformed/uvc-plugin-8.28.3/AndroidManifest.xml:26:9-37:20
+	android:exported
+		ADDED from [:uvc-plugin-8.28.3:] /home/fernanda/.gradle/caches/transforms-3/d384b2bd81862d4416a1f417a55f4f15/transformed/uvc-plugin-8.28.3/AndroidManifest.xml:28:13-36
+	android:theme
+		ADDED from [:uvc-plugin-8.28.3:] /home/fernanda/.gradle/caches/transforms-3/d384b2bd81862d4416a1f417a55f4f15/transformed/uvc-plugin-8.28.3/AndroidManifest.xml:29:13-59
+	android:name
+		ADDED from [:uvc-plugin-8.28.3:] /home/fernanda/.gradle/caches/transforms-3/d384b2bd81862d4416a1f417a55f4f15/transformed/uvc-plugin-8.28.3/AndroidManifest.xml:27:13-81
+intent-filter#action:name:android.hardware.usb.action.USB_DEVICE_ATTACHED
+ADDED from [:uvc-plugin-8.28.3:] /home/fernanda/.gradle/caches/transforms-3/d384b2bd81862d4416a1f417a55f4f15/transformed/uvc-plugin-8.28.3/AndroidManifest.xml:30:13-32:29
+action#android.hardware.usb.action.USB_DEVICE_ATTACHED
+ADDED from [:uvc-plugin-8.28.3:] /home/fernanda/.gradle/caches/transforms-3/d384b2bd81862d4416a1f417a55f4f15/transformed/uvc-plugin-8.28.3/AndroidManifest.xml:31:17-90
+	android:name
+		ADDED from [:uvc-plugin-8.28.3:] /home/fernanda/.gradle/caches/transforms-3/d384b2bd81862d4416a1f417a55f4f15/transformed/uvc-plugin-8.28.3/AndroidManifest.xml:31:25-87
+meta-data#android.hardware.usb.action.USB_DEVICE_ATTACHED
+ADDED from [:uvc-plugin-8.28.3:] /home/fernanda/.gradle/caches/transforms-3/d384b2bd81862d4416a1f417a55f4f15/transformed/uvc-plugin-8.28.3/AndroidManifest.xml:34:13-36:61
+	android:resource
+		ADDED from [:uvc-plugin-8.28.3:] /home/fernanda/.gradle/caches/transforms-3/d384b2bd81862d4416a1f417a55f4f15/transformed/uvc-plugin-8.28.3/AndroidManifest.xml:36:17-58
+	android:name
+		ADDED from [:uvc-plugin-8.28.3:] /home/fernanda/.gradle/caches/transforms-3/d384b2bd81862d4416a1f417a55f4f15/transformed/uvc-plugin-8.28.3/AndroidManifest.xml:35:17-79

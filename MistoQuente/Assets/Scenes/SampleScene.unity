@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.4440218, g: 0.49316478, b: 0.5722311, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -698,8 +698,8 @@ MonoBehaviour:
   buttonRotationLeft: {fileID: 2479127140239900127}
   buttonRotationRight: {fileID: 2725504309725350257}
   mirrorViewsButton: {fileID: 1975309550987716839}
-  leftView: {fileID: 40919615}
-  rightView: {fileID: 1013506128}
+  redView: {fileID: 40919615}
+  blueView: {fileID: 1013506128}
   viewDistance: {fileID: 5564532749751968110}
   offSetSlider: 0
   maxValueSlider: 0

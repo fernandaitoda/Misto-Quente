@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/fernanda/Git/Misto-Quente/MistoQuente/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml",
+            "map": [
+                {
+                    "source": "/home/fernanda/.gradle/caches/transforms-3/4334c05e75ab38590655f71c3f74c58c/transformed/aandusb-8.28.3/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,118,179,233",
+                        "endColumns": "62,60,53,50",
+                        "endOffsets": "113,174,228,279"
+                    }
+                },
+                {
+                    "source": "/home/fernanda/.gradle/caches/transforms-3/590f593dd6f9d3a68602022810157efd/transformed/common-8.1.3/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,131,206,282,356,409,459",
+                        "endColumns": "75,74,75,73,52,49,49",
+                        "endOffsets": "126,201,277,351,404,454,504"
+                    },
+                    "to": {
+                        "startLines": "6,7,8,9,10,11,12",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "284,360,435,511,585,638,688",
+                        "endColumns": "75,74,75,73,52,49,49",
+                        "endOffsets": "355,430,506,580,633,683,733"
+                    }
+                }
+            ]
+        }
+    ]
+}

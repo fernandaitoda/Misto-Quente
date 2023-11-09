@@ -1,9 +1,9 @@
 {
-    "m_SelectedDeviceId": "192.168.15.47:45137",
+    "m_SelectedDeviceId": "ca2fded5",
     "m_SelectedPackage": {
-        "deviceId": "",
-        "name": "",
-        "processId": 0,
+        "deviceId": "ca2fded5",
+        "name": "com.serenegiant.mistoquente",
+        "processId": 15079,
         "exited": false
     },
     "m_SelectedPriority": 1,
@@ -60,6 +60,12 @@
             "deviceId": "192.168.15.47:45137",
             "name": "com.serenegiant.mistoquente",
             "processId": 22373,
+            "exited": false
+        },
+        {
+            "deviceId": "ca2fded5",
+            "name": "com.serenegiant.mistoquente",
+            "processId": 15079,
             "exited": false
         }
     ],

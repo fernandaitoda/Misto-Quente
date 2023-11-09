@@ -28,7 +28,7 @@ namespace Serenegiant.UVC
 		[SerializeField] TextMeshProUGUI[] idCamera;
 
 		private const string TAG = "UVCManager#";
-		private const string FQCN_DETECTOR = "com.serenegiant.mistoquente.usb.DeviceDetectorFragment";
+		private const string FQCN_DETECTOR = "com.serenegiant.usb.DeviceDetectorFragment";
 		private const int FRAME_TYPE_MJPEG = 0x000007;
 		private const int FRAME_TYPE_H264 = 0x000014;
 		private const int FRAME_TYPE_H264_FRAME = 0x030011;

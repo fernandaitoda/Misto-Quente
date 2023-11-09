@@ -7,7 +7,7 @@
     <uses-permission android:name="android.permission.CAMERA" /> //
 
     <application>
-        <activity android:name="com.serenegiant.mistoquente.UsbPermissionActivity" tools:node="remove"/>
+        <activity android:name="com.serenegiant.uvcplugin.UsbPermissionActivity" tools:node="remove"/>
         <activity android:name="com.unity3d.player.UnityPlayerActivity"
                   android:theme="@style/UnityThemeSelector">
             <intent-filter>

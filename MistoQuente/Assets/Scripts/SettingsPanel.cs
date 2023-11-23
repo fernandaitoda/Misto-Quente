@@ -11,6 +11,7 @@ namespace Serenegiant.UVC
         [SerializeField] Button buttonRotationLeft;
         [SerializeField] Button buttonRotationRight;
         [SerializeField] Button mirrorViewsButton;
+        [SerializeField] Dropdown resolutionDropdown;
 
         [SerializeField] RectTransform redView;
         [SerializeField] RectTransform blueView;
@@ -27,10 +28,12 @@ namespace Serenegiant.UVC
         {
             rightView = blueView;
             leftView = redView;
+
             buttonRotationLeft.onClick.AddListener(RotateLeft);
             buttonRotationRight.onClick.AddListener(RotateRight);
             mirrorViewsButton.onClick.AddListener(MirrorView);
             viewDistance.onValueChanged.AddListener(DistanceView);
+            resolutionDropdown.onValueChanged.AddListener(ResolutionChange);
         }
         void RotateLeft()
         {
@@ -94,6 +97,28 @@ namespace Serenegiant.UVC
             rightView = blueView;
             leftView = redView;
             }
+        }
+
+        void ResolutionChange(int value)
+        {
+            Debug.Log("Selected Option: " + resolutionDropdown.options[value].text);
+        
+            switch (value) 
+            {
+                case 0:
+                    // Handle the first option
+                    Debug.Log("Option 1 selected");
+                    break;
+                case 1:
+                    // Handle the second option
+                    Debug.Log("Option 2 selected");
+                    break;
+                // Add more cases as needed
+                default:
+                    break;
+
+            }
+        
         }
     }
 }

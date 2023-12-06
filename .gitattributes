@@ -1,0 +1,4 @@
+*.tgz filter=lfs diff=lfs merge=lfs -text
+C:/Users/Victor/Documents/Misto-Quente/MistoQuente/Packages filter=lfs diff=lfs merge=lfs -text
+C:/Users/Victor/Documents/Misto-Quente/MistoQuente/Library/ArtifactDB filter=lfs diff=lfs merge=lfs -text
+com.ptc.vuforia.engine-10.19.3.tgz filter=lfs diff=lfs merge=lfs -text

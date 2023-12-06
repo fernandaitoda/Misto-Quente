@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="camera_dialog_horizontal_padding">8dp</dimen>
-    <dimen name="camera_dialog_vertical_padding">8dp</dimen>
-    <dimen name="device_list_height_min">48dp</dimen>
-    <dimen name="device_list_text_sz">28sp</dimen>
-</resources>

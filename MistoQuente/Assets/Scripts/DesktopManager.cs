@@ -22,7 +22,12 @@ public class DualWebcamManager : MonoBehaviour
 
     void Start()
     {
+        webcamDropdown1.onValueChanged.AddListener(OnDropdown1ValueChanged);
+        webcamDropdown2.onValueChanged.AddListener(OnDropdown2ValueChanged);
+        dropdownResolution1.onValueChanged.AddListener(OnDropdownResolution1ValueChanged);
+        dropdownResolution2.onValueChanged.AddListener(OnDropdownResolution2ValueChanged);
         refresh.onClick.AddListener(RefreshCams);
+
         RefreshCams();
         
     }
@@ -40,12 +45,15 @@ public class DualWebcamManager : MonoBehaviour
             webcamTexture2.Stop();
         }
 
+        webcamDropdown1.ClearOptions();
+        webcamDropdown2.ClearOptions();
+
         if (devices.Count >= 2)
         {
             List<TMP_Dropdown.OptionData> options = getOptionsDropdown();
-            webcamDropdown1.ClearOptions();
+            
             webcamDropdown1.AddOptions(options);
-            webcamDropdown2.ClearOptions();
+            
             webcamDropdown2.AddOptions(options);
 
 
@@ -208,10 +216,7 @@ public class DualWebcamManager : MonoBehaviour
         int height = webcamTexture.requestedHeight;
 
         Debug.Log("Selecting " + device.name + " Width: " + width + ", Height: " + height);
-
-
     }
-
 
     bool IsWebcamInUse(WebCamDevice device)
     {
@@ -246,9 +251,8 @@ public class DualWebcamManager : MonoBehaviour
     /////////////////// CALLBACK FUNCTIONS ///////////////////
     
     // Callback for the camera selection 1 value change
-    public void OnDropdown1ValueChanged()
+    public void OnDropdown1ValueChanged(int selectedIndex)
     {
-        int selectedIndex = webcamDropdown1.value;
         
         if (webcamTexture1 != null)
         {
@@ -274,9 +278,9 @@ public class DualWebcamManager : MonoBehaviour
     }
 
     // Callback for the camera selection 2 value change
-     public void OnDropdown2ValueChanged()
+    public void OnDropdown2ValueChanged(int selectedIndex)
     {
-        int selectedIndex = webcamDropdown2.value;
+        
 
         StopIfPlaying (ref webcamTexture2);
 
@@ -297,21 +301,17 @@ public class DualWebcamManager : MonoBehaviour
     }
 
     // Callback for the camera resolution 1 value change
-    public void OnDropdownResolution1ValueChanged()
+    public void OnDropdownResolution1ValueChanged(int selectedIndex)
     {
         StopIfPlaying(ref webcamTexture1);
-
-        int selectedIndex = dropdownResolution1.value;
         
         ResizeResolution(ref webcamTexture1, ref rawImage1, selectedIndex);
     }
 
     // Callback for the camera resolution 2 value change
-    public void OnDropdownResolution2ValueChanged()
+    public void OnDropdownResolution2ValueChanged(int selectedIndex)
     {
         StopIfPlaying(ref webcamTexture2);
-
-        int selectedIndex = dropdownResolution2.value;
         
         ResizeResolution(ref webcamTexture2, ref rawImage2, selectedIndex);
     }

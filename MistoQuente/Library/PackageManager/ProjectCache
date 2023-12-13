@@ -5,113 +5,23 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638369692604962634
-    m_Hash: 1192025978
+      ticks: 638380746871470825
+    m_Hash: 2713178603
   m_LockFileStatus:
     m_FilePath: C:/Users/Victor/Documents/Misto-Quente/MistoQuente/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638369692605172298
-    m_Hash: 50578366
+      ticks: 638380746871567081
+    m_Hash: 2881923543
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
-  m_LocalFileStatus:
-  - m_FilePath: C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Packages\com.ptc.vuforia.engine-10.19.3.tgz/package.json
-    m_PathExists: 0
-    m_ContentTrackingEnabled: 1
-    m_ModificationDate:
-      serializedVersion: 2
-      ticks: 0
-    m_Hash: 0
-  - m_FilePath: C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Packages\com.ptc.vuforia.engine-10.19.3.tgz
-    m_PathExists: 1
-    m_ContentTrackingEnabled: 1
-    m_ModificationDate:
-      serializedVersion: 2
-      ticks: 638355773390000000
-    m_Hash: 1723022497
+  m_LocalFileStatus: []
 m_ProjectPath: C:/Users/Victor/Documents/Misto-Quente/MistoQuente/Packages
 m_EditorVersion: 2022.3.9f1 (ea401c316338)
 m_ResolvedPackages:
-- packageId: com.ptc.vuforia.engine@file:C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Packages\com.ptc.vuforia.engine-10.19.3.tgz
-  testable: 0
-  isDirectDependency: 1
-  version: 10.19.3
-  source: 6
-  resolvedPath: C:\Users\Victor\Documents\Misto-Quente\MistoQuente\Library\PackageCache\com.ptc.vuforia.engine@5c06438d2d71
-  assetPath: Packages/com.ptc.vuforia.engine
-  name: com.ptc.vuforia.engine
-  displayName: Vuforia Engine AR
-  author:
-    name: PTC Inc.
-    email: 
-    url: https://developer.vuforia.com/
-  category: 
-  type: 
-  description: Vuforia Engine is the most widely used platform for AR development,
-    with support for leading phones, tablets, and eyewear. Developers can easily
-    add advanced computer vision functionality to Android, iOS, and UWP apps, to
-    create AR experiences that realistically interact with objects and the environment.
-  status: 0
-  errors: []
-  versions:
-    all:
-    - 8.0.101
-    - 8.1.9
-    - 8.1.12
-    - 8.3.9
-    - 8.5.8
-    - 8.5.9
-    compatible: []
-    recommended: 
-    deprecated: []
-  dependencies:
-  - name: com.unity.ugui
-    version: 1.0.0
-  resolvedDependencies:
-  - name: com.unity.ugui
-    version: 1.0.0
-  - name: com.unity.modules.ui
-    version: 1.0.0
-  - name: com.unity.modules.imgui
-    version: 1.0.0
-  keywords:
-  - vuforia
-  - engine
-  - ar
-  - xr
-  - augmented
-  - reality
-  - sdk
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
-  hideInEditor: 1
-  isAssetStorePackage: 0
-  datePublishedTicks: 0
-  documentationUrl: 
-  hasRepository: 0
-  repository:
-    type: 
-    url: 
-    revision: 
-    path: 
-  unityLifecycle:
-    version: 
-    nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 1
-    deprecationMessage: This package is no longer supported on this editor version.
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.2d.sprite@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -978,11 +888,13 @@ m_ResolvedPackages:
     - 3.0.24
     - 3.0.25
     - 3.0.26
+    - 3.0.27
     compatible:
     - 3.0.24
     - 3.0.25
     - 3.0.26
-    recommended: 3.0.26
+    - 3.0.27
+    recommended: 3.0.27
     deprecated: []
   dependencies:
   - name: com.unity.ext.nunit
@@ -1598,6 +1510,7 @@ m_ResolvedPackages:
     - 1.3.9
     - 1.4.0
     - 1.4.1
+    - 1.4.2
     - 2.0.1-exp.1
     - 2.0.1-exp.2
     - 2.0.1-pre.12
@@ -1615,6 +1528,7 @@ m_ResolvedPackages:
     - 1.3.9
     - 1.4.0
     - 1.4.1
+    - 1.4.2
     - 2.0.1-exp.1
     - 2.0.1-exp.2
     - 2.0.1-pre.12

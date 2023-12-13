@@ -14,11 +14,15 @@ public class DualWebcamManager : MonoBehaviour
     [SerializeField] TMP_Dropdown dropdownResolution1;
     [SerializeField] TMP_Dropdown dropdownResolution2;
     [SerializeField] GameObject cameraInUsePopupPrefab;
-    [SerializeField] Button refresh; 
+    [SerializeField] Button refresh;
+    [SerializeField] GameObject plane;
+
+
 
     private WebCamTexture webcamTexture1 = null;
     private WebCamTexture webcamTexture2 = null;
     private List<WebCamDevice> devices;
+    private GameObject videoBackGround = null;
 
     void Start()
     {
@@ -29,7 +33,19 @@ public class DualWebcamManager : MonoBehaviour
         refresh.onClick.AddListener(RefreshCams);
 
         RefreshCams();
+
         
+            
+
+
+
+    }
+    
+    void Update () {
+        
+
+        // videoBackGround.transform.localScale = plane.transform.localScale;
+        // videoBackGround.transform.position = plane.transform.position;
     }
 
     void RefreshCams() {
